@@ -17,7 +17,7 @@ body {
 head {
     background-color: rgb(111, 205, 240);
 }
-a {
+.navlinks {
   color: rgb(179, 179, 179)
   -webkit-transition: none;
   -moz-transition: none;
@@ -25,4 +25,7 @@ a {
   -o-transition: none;
   font-size: 14px;
   padding: 15px 10px;
+  font-weight: normal;
+  margin-right: 30px;
+  font-family: 'Times New Roman', Times,serif;
 }
