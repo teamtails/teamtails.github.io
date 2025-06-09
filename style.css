@@ -2,6 +2,7 @@
 h1 {
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
+    color:lightgray;
     font: 24px;
 }
 
@@ -9,4 +10,7 @@ h1 {
     text-align:left;
     font-family:'Times New Roman', Times, serif;
     font: 12px;
+}
+body {
+    background-color: lightblue;
 }
