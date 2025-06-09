@@ -17,7 +17,7 @@ body {
 head {
     background-color: blue
 }
-.navlinks {
+.navlinks a:link {
   color: rgb(179, 179, 179)
   -webkit-transition: none;
   -moz-transition: none;
