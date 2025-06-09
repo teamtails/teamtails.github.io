@@ -13,8 +13,8 @@ head {
     background-color: blue;
 }
  a {
-  color: rgb(179, 179, 179);
-  text-decoration: none;
+  text-decoration:none;
+    color: rgb(179, 179, 179);
   font-size: 14px;
   padding: 5px 5px;
   font-weight: normal;
