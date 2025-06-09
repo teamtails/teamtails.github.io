@@ -12,5 +12,17 @@ h1 {
     font: 12px;
 }
 body {
-    background-color: lightblue;
+    background-color: rgb(139, 210, 234);
+}
+head {
+    background-color: rgb(208, 236, 246);
+}
+a {
+  color: rgb(179, 179, 179)
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  font-size: 14px;
+  padding: 15px 10px;
 }
