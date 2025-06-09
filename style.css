@@ -6,11 +6,6 @@ h1 {
     font: 24px;
 }
 
-.link {
-    text-align:left;
-    font-family:'Times New Roman', Times, serif;
-    font: 12px;
-}
 body {
     background-color: lightblue;
 }
@@ -19,10 +14,6 @@ head {
 }
 .navlinks a:link {
   color: rgb(179, 179, 179);
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
   font-size: 14px;
   padding: 500px 500px;
   font-weight: normal;
