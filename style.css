@@ -12,13 +12,13 @@ h1 {
     font: 12px;
 }
 body {
-    background-color: lightblue
+    background-color: lightblue;
 }
 head {
-    background-color: blue
+    background-color: blue;
 }
 .navlinks a:link {
-  color: rgb(179, 179, 179)
+  color: rgb(179, 179, 179);
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -28,4 +28,7 @@ head {
   font-weight: normal;
   margin-right: 30px;
   font-family: 'Times New Roman', Times,serif;
+}
+.navlinks a:hover {
+    color: darken(gray,30%);
 }
