@@ -30,5 +30,5 @@ head {
   font-family: 'Times New Roman', Times,serif;
 }
 .navlinks a:hover {
-    color: darken(gray,30%);
+    color: darken(rgb(179, 179, 179),30%);
 }
