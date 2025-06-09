@@ -12,7 +12,7 @@ body {
 head {
     background-color: blue;
 }
-.navlinks a {
+ a {
   color: rgb(179, 179, 179);
   text-decoration: none;
   font-size: 14px;
@@ -21,7 +21,7 @@ head {
   margin-right: 500px;
   font-family: 'Times New Roman', Times,serif;
 }
-.navlinks a:hover {
+a:hover {
     color: darken(rgb(179, 179, 179),30%);
     text-decoration: underline;
 }
