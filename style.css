@@ -18,10 +18,11 @@ head {
   font-size: 14px;
   padding: 5px 5px;
   font-weight: normal;
-  margin-right: 5px;
+  margin-right: 200px;
+  margin-left: 200px;
   font-family: 'Times New Roman', Times,serif;
 }
 a:hover {
-    color: darken(rgb(179, 179, 179),30%);
+    color: rgb(124, 124, 124);
     text-decoration: underline;
 }
