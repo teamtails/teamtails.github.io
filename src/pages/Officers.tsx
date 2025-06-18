@@ -86,7 +86,11 @@ const Officers = () => {
                 <CardHeader>
                   <div className="flex items-start space-x-4">
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                      {officer.image}
+                      <img
+  src={officer.image}
+  alt={officer.name}
+  className="w-20 h-20 rounded-full object-cover"
+/>
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
