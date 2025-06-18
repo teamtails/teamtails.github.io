@@ -1,127 +1,106 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Calendar, MapPin, Users, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar, MapPin, Clock, Users } from "lucide-react";
 
 export const UpcomingEvents = () => {
   const events = [
     {
-      id: 1,
-      title: "Animal Welfare Workshop",
-      date: "July 15, 2024",
-      time: "2:00 PM - 5:00 PM",
-      location: "Community Center, Downtown",
-      type: "training",
-      participants: "25 volunteers",
-      description: "Comprehensive training session on animal behavior and handling techniques for new volunteers."
+      title: "Volunteer Training Workshop",
+      date: "March 15, 2024",
+      time: "10:00 AM - 2:00 PM",
+      location: "Austin Community Center",
+      chapter: "Team Tails Austin",
+      description: "Learn the basics of animal care and volunteer safety protocols.",
+      spots: "12 spots available"
     },
     {
-      id: 2,
-      title: "Pet Care Education Fair",
-      date: "July 22, 2024",
-      time: "10:00 AM - 4:00 PM",
-      location: "City Park",
-      type: "outreach",
-      participants: "Expected 200+ attendees",
-      description: "Community event featuring pet care demonstrations, educational booths, and volunteer recruitment."
+      title: "Community Outreach Fair",
+      date: "March 22, 2024",
+      time: "9:00 AM - 4:00 PM",
+      location: "Chicago Downtown Park",
+      chapter: "Team Tails Chicago",
+      description: "Join us for a day of community education and pet care awareness.",
+      spots: "Volunteers needed"
     },
     {
-      id: 3,
-      title: "Volunteer Appreciation Dinner",
-      date: "August 5, 2024",
-      time: "6:00 PM - 9:00 PM",
-      location: "Grand Hotel Ballroom",
-      type: "social",
-      participants: "All volunteers",
-      description: "Annual celebration recognizing outstanding volunteer contributions and achievements."
+      title: "Monthly Chapter Meeting",
+      date: "April 3, 2024",
+      time: "7:00 PM - 8:30 PM",
+      location: "Virtual Meeting",
+      chapter: "All Chapters",
+      description: "Monthly planning meeting for all Team Tails volunteers.",
+      spots: "Open to all"
+    },
+    {
+      title: "Pet Safety Education Drive",
+      date: "April 12, 2024",
+      time: "11:00 AM - 3:00 PM",
+      location: "Los Angeles City Mall",
+      chapter: "Team Tails Los Angeles",
+      description: "Educational booth about pet safety and responsible ownership.",
+      spots: "8 spots available"
     }
   ];
 
-  const trainingEvents = events.filter(event => event.type === "training");
-  const outreachEvents = events.filter(event => event.type === "outreach");
-  const socialEvents = events.filter(event => event.type === "social");
-
-  const EventCard = ({ event }: { event: typeof events[0] }) => (
-    <Card className="mb-4 hover:shadow-lg transition-shadow duration-300">
-      <CardHeader>
-        <CardTitle className="text-xl text-gray-800">{event.title}</CardTitle>
-        <CardDescription className="text-gray-600">{event.description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-2">
-          <div className="flex items-center text-gray-600">
-            <Calendar className="w-4 h-4 mr-2" />
-            <span>{event.date}</span>
-          </div>
-          <div className="flex items-center text-gray-600">
-            <Clock className="w-4 h-4 mr-2" />
-            <span>{event.time}</span>
-          </div>
-          <div className="flex items-center text-gray-600">
-            <MapPin className="w-4 h-4 mr-2" />
-            <span>{event.location}</span>
-          </div>
-          <div className="flex items-center text-gray-600">
-            <Users className="w-4 h-4 mr-2" />
-            <span>{event.participants}</span>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
-  );
-
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join us at our upcoming events and be part of the change you want to see in animal welfare.
+            Join us at upcoming volunteer events and training sessions. 
+            Together, we can make a bigger impact in our communities.
           </p>
         </div>
-
-        <Tabs defaultValue="all" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="all">All Events</TabsTrigger>
-            <TabsTrigger value="training">Training</TabsTrigger>
-            <TabsTrigger value="outreach">Outreach</TabsTrigger>
-            <TabsTrigger value="social">Social</TabsTrigger>
-          </TabsList>
-          
-          <TabsContent value="all" className="mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              {events.map((event) => (
-                <EventCard key={event.id} event={event} />
-              ))}
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="training" className="mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              {trainingEvents.map((event) => (
-                <EventCard key={event.id} event={event} />
-              ))}
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="outreach" className="mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              {outreachEvents.map((event) => (
-                <EventCard key={event.id} event={event} />
-              ))}
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="social" className="mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              {socialEvents.map((event) => (
-                <EventCard key={event.id} event={event} />
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+        
+        <div className="grid lg:grid-cols-2 gap-8">
+          {events.map((event, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-xl text-gray-800 mb-2">{event.title}</CardTitle>
+                    <CardDescription className="text-blue-600 font-semibold">
+                      {event.chapter}
+                    </CardDescription>
+                  </div>
+                  <div className="bg-blue-100 rounded-lg p-2">
+                    <Calendar className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">{event.description}</p>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-gray-600">
+                    <Calendar className="w-4 h-4 mr-3" />
+                    <span>{event.date}</span>
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <Clock className="w-4 h-4 mr-3" />
+                    <span>{event.time}</span>
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <MapPin className="w-4 h-4 mr-3" />
+                    <span>{event.location}</span>
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <Users className="w-4 h-4 mr-3" />
+                    <span>{event.spots}</span>
+                  </div>
+                </div>
+                
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  Register for Event
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

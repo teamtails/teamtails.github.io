@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Heart, ArrowDown } from "lucide-react";
 
 export const Hero = () => {
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -33,16 +33,25 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              onClick={scrollToContact}
+            >
               Join Our Mission
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              onClick={() => window.location.href = '/chapters'}
+            >
               Find Your Chapter
             </Button>
           </div>
           
           <button 
-            onClick={scrollToAbout}
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             className="animate-bounce cursor-pointer hover:scale-110 transition-transform duration-300"
             aria-label="Scroll to learn more"
           >

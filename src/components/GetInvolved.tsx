@@ -1,17 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Users, HandHeart, DollarSign } from "lucide-react";
+import { Users, HandHeart } from "lucide-react";
 
 export const GetInvolved = () => {
   const ways = [
-    {
-      icon: Heart,
-      title: "Adopt a Pet",
-      description: "Give a loving animal their forever home and gain a loyal companion for life.",
-      action: "Browse Pets",
-      color: "bg-red-50 border-red-200 hover:bg-red-100"
-    },
     {
       icon: Users,
       title: "Volunteer",
@@ -20,20 +13,17 @@ export const GetInvolved = () => {
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100"
     },
     {
-      icon: DollarSign,
-      title: "Donate",
-      description: "Your donation helps us provide food, medical care, and shelter for rescued animals.",
-      action: "Donate Now",
-      color: "bg-green-50 border-green-200 hover:bg-green-100"
-    },
-    {
       icon: HandHeart,
-      title: "Foster",
-      description: "Provide temporary care for animals recovering from medical procedures or awaiting adoption.",
+      title: "Start a Chapter",
+      description: "Bring Team Tails to your community and help us expand our reach to help more animals.",
       action: "Learn More",
-      color: "bg-purple-50 border-purple-200 hover:bg-purple-100"
+      color: "bg-green-50 border-green-200 hover:bg-green-100"
     }
   ];
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section className="py-20 bg-gray-50">
@@ -43,12 +33,12 @@ export const GetInvolved = () => {
             Get Involved
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            There are many ways to support our mission and help animals in need. 
-            Every contribution, big or small, makes a meaningful impact.
+            Join our volunteer community and help us make a meaningful impact in animal welfare. 
+            Every volunteer contribution helps us reach more animals in need.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => (
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
               <CardHeader className="text-center">
@@ -61,7 +51,10 @@ export const GetInvolved = () => {
                 <CardDescription className="text-gray-600 mb-6 leading-relaxed">
                   {way.description}
                 </CardDescription>
-                <Button className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300">
+                <Button 
+                  className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
+                  onClick={scrollToContact}
+                >
                   {way.action}
                 </Button>
               </CardContent>
