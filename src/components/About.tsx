@@ -7,10 +7,10 @@ export const About = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Our Mission
+            About Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-           A Collective of Nine Schools Joining Forces to Make an Impact in Animal Welfare and the Support of Our Shelters
+           A Collective of Nine Schools Joining Forces to Make an Impact in Animal Welfare and the Support of Our Shelters.
 
           </p>
         </div>
@@ -20,7 +20,7 @@ export const About = () => {
             <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
               <Heart className="w-10 h-10 text-blue-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Community Outreach</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Outreach</h3>
             <p className="text-gray-600 leading-relaxed">
               We are dedicated to creating opportunities for youth to interact and help their local shelter.
 
@@ -32,7 +32,7 @@ export const About = () => {
             <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
               <HandHeart className="w-10 h-10 text-green-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Volunteer Support</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Awareness</h3>
             <p className="text-gray-600 leading-relaxed">
               We advertise and spread awareness about animals in need of homes. 
             </p>
