@@ -13,7 +13,7 @@ const Officers = () => {
       email: "sarah.johnson@teamtails.org",
       phone: "(555) 123-0001",
       location: "National Headquarters, Washington DC",
-      image: "/econme%20copy.jpg"
+      image: "public/econme%20copy.jpg"
     },
     {
       name: "Molly O'Brien",
