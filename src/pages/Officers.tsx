@@ -7,17 +7,17 @@ import { Footer } from "@/components/Footer";
 const Officers = () => {
   const officers = [
     {
-      name: "Sarah Johnson",
-      title: "National President",
+      name: "Beckett Bonness",
+      title: "President",
       bio: "Sarah has been with Team Tails for over 8 years and has led initiatives that have expanded our reach to over 50 chapters nationwide. She holds a degree in Animal Science and previously worked at the National Animal Welfare Association.",
       email: "sarah.johnson@teamtails.org",
       phone: "(555) 123-0001",
       location: "National Headquarters, Washington DC",
-      image: "/placeholder.svg"
+      image: "teamtails/teamtails.github.io/econme%20copy.jpg"
     },
     {
-      name: "Michael Chen",
-      title: "Vice President of Operations",
+      name: "Molly O'Brien",
+      title: "Vice President",
       bio: "Michael oversees the day-to-day operations of all Team Tails chapters. With a background in nonprofit management, he ensures our volunteers have the resources and support they need to succeed.",
       email: "michael.chen@teamtails.org",
       phone: "(555) 123-0002",
@@ -25,8 +25,8 @@ const Officers = () => {
       image: "/placeholder.svg"
     },
     {
-      name: "Emily Rodriguez",
-      title: "Director of Volunteer Programs",
+      name: "Rafi Pikofsy",
+      title: "Vice President",
       bio: "Emily develops and implements training programs for our volunteers. She has a passion for education and has created curriculum used by animal welfare organizations across the country.",
       email: "emily.rodriguez@teamtails.org",
       phone: "(555) 123-0003",
@@ -34,8 +34,8 @@ const Officers = () => {
       image: "/placeholder.svg"
     },
     {
-      name: "David Thompson",
-      title: "Community Outreach Coordinator",
+      name: "Maddie Seelke",
+      title: "Head of PR",
       bio: "David leads our community engagement efforts and helps establish new chapters. His grassroots organizing experience has been instrumental in our expansion into rural communities.",
       email: "david.thompson@teamtails.org",
       phone: "(555) 123-0004",
@@ -43,8 +43,8 @@ const Officers = () => {
       image: "/placeholder.svg"
     },
     {
-      name: "Lisa Park",
-      title: "Secretary & Communications Director",
+      name: "Brandon Zhang",
+      title: "Head of Administration",
       bio: "Lisa manages our communications and keeps our organization running smoothly. She coordinates between chapters and ensures consistent messaging across all our platforms.",
       email: "lisa.park@teamtails.org",
       phone: "(555) 123-0005",
@@ -52,8 +52,8 @@ const Officers = () => {
       image: "/placeholder.svg"
     },
     {
-      name: "Robert Williams",
-      title: "Treasurer",
+      name: "Brendan Weinstein",
+      title: "Head of Technology",
       bio: "Robert oversees our financial operations and ensures transparency in all our funding. His background in nonprofit accounting helps us maximize the impact of every dollar we manage.",
       email: "robert.williams@teamtails.org",
       phone: "(555) 123-0006",
