@@ -1,9 +1,9 @@
 
 export const Impact = () => {
   const stats = [
-    { number: "2,500+", label: "Animals Rescued", color: "text-blue-600" },
-    { number: "1,800+", label: "Successful Adoptions", color: "text-green-600" },
-    { number: "300+", label: "Active Volunteers", color: "text-purple-600" },
+    { number: "2,500+", label: "Volunteers Trained", color: "text-blue-600" },
+    { number: "1,800+", label: "Community Events", color: "text-green-600" },
+    { number: "50+", label: "Active Chapters", color: "text-purple-600" },
     { number: "15", label: "Years of Service", color: "text-orange-600" }
   ];
 
@@ -12,10 +12,10 @@ export const Impact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Making a Difference
+            Making a Difference Together
           </h2>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Together, we've transformed thousands of lives and created countless happy endings.
+            Through dedicated volunteers and strong community partnerships, we're creating positive change for animals nationwide.
           </p>
         </div>
         

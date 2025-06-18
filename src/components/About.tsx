@@ -10,8 +10,7 @@ export const About = () => {
             Our Mission
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At Team Tails, we believe every animal deserves a loving home and a second chance at happiness. 
-            We rescue, rehabilitate, and rehome animals while building stronger communities through compassion.
+            Team Tails is a nationwide volunteer organization dedicated to improving animal welfare through community action, education, and advocacy. We believe that every person can make a difference in the lives of animals.
           </p>
         </div>
         
@@ -20,9 +19,9 @@ export const About = () => {
             <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
               <Heart className="w-10 h-10 text-blue-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Rescue</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Community Outreach</h3>
             <p className="text-gray-600 leading-relaxed">
-              We rescue animals from dangerous situations, providing immediate medical care and safety.
+              We organize local events and educational programs to raise awareness about animal welfare in our communities.
             </p>
           </div>
           
@@ -30,9 +29,9 @@ export const About = () => {
             <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
               <HandHeart className="w-10 h-10 text-green-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Rehabilitate</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Volunteer Support</h3>
             <p className="text-gray-600 leading-relaxed">
-              Our dedicated team provides medical treatment, behavioral training, and lots of love.
+              We provide training, resources, and coordination for volunteers working with local animal shelters and rescue organizations.
             </p>
           </div>
           
@@ -40,9 +39,9 @@ export const About = () => {
             <div className="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors duration-300">
               <Users className="w-10 h-10 text-purple-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Rehome</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800">Advocacy</h3>
             <p className="text-gray-600 leading-relaxed">
-              We carefully match animals with loving families, ensuring perfect forever homes.
+              We advocate for better animal welfare policies and support legislation that protects animals at all levels of government.
             </p>
           </div>
         </div>

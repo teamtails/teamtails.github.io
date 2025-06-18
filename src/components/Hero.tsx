@@ -29,15 +29,15 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Connecting loving hearts with furry souls in need. Every tail deserves a happy ending.
+            Join our community of passionate volunteers making a difference in animal welfare across the nation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
-              Adopt Today
+              Join Our Mission
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
-              Volunteer With Us
+              Find Your Chapter
             </Button>
           </div>
           
