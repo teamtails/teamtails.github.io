@@ -22,7 +22,7 @@ const Officers = () => {
       email: "michael.chen@teamtails.org",
       phone: "(555) 123-0002",
       location: "National Headquarters, Washington DC",
-      image: "/placeholder.svg"
+      image: "/Molly.jpg"
     },
     {
       name: "Rafi Pikofsy",
@@ -31,7 +31,7 @@ const Officers = () => {
       email: "emily.rodriguez@teamtails.org",
       phone: "(555) 123-0003",
       location: "Training Center, Austin TX",
-      image: "/placeholder.svg"
+      image: "/Rafi.png"
     },
     {
       name: "Maddie Seelke",
@@ -40,7 +40,7 @@ const Officers = () => {
       email: "david.thompson@teamtails.org",
       phone: "(555) 123-0004",
       location: "Regional Office, Denver CO",
-      image: "/placeholder.svg"
+      image: "/Maddie.jpg"
     },
     {
       name: "Brandon Zhang",
@@ -49,7 +49,7 @@ const Officers = () => {
       email: "lisa.park@teamtails.org",
       phone: "(555) 123-0005",
       location: "National Headquarters, Washington DC",
-      image: "/placeholder.svg"
+      image: "/Brandon.jpg"
     },
     {
       name: "Brendan Weinstein",
@@ -58,7 +58,7 @@ const Officers = () => {
       email: "robert.williams@teamtails.org",
       phone: "(555) 123-0006",
       location: "National Headquarters, Washington DC",
-      image: "/placeholder.svg"
+      image: "/Brendan.PNG"
     }
   ];
 
