@@ -27,17 +27,14 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors duration-300">Join a Chapter</a></li>
               <li><a href="/chapters" className="hover:text-white transition-colors duration-300">Find Your Chapter</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-300">Start a Chapter</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Volunteer Training</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">About Us</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Our Mission</a></li>
+              <li><a href="/about" className="hover:text-white transition-colors duration-300">Our Mission</a></li>
               <li><a href="/officers" className="hover:text-white transition-colors duration-300">Meet Our Officers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Annual Reports</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Success Stories</a></li>
             </ul>
           </div>
           

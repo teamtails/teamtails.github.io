@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Heart, ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -36,17 +37,17 @@ export const Hero = () => {
             <Button 
               size="lg" 
               className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
-              onClick={scrollToContact}
+              asChild
             >
-              Join Our Mission
+              <Link to="/about">Our Mission</Link>
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
-              onClick={() => window.location.href = '/chapters'}
+              asChild
             >
-              Find Your Chapter
+              <Link to="/chapters">Find Your Chapter</Link>
             </Button>
           </div>
           
