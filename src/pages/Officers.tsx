@@ -9,7 +9,7 @@ const Officers = () => {
     {
       name: "Beckett Bonness",
       title: "President",
-      bio: "Sarah has been with Team Tails for over 8 years and has led initiatives that have expanded our reach to over 50 chapters nationwide. She holds a degree in Animal Science and previously worked at the National Animal Welfare Association.",
+      bio: "As President, he brings experience from business leadership through DECA, the World Trade Center Institute, and economics advocacy.",
       email: "sarah.johnson@teamtails.org",
       phone: "(555) 123-0001",
       location: "National Headquarters, Washington DC",
@@ -18,7 +18,7 @@ const Officers = () => {
     {
       name: "Molly O'Brien",
       title: "Vice President",
-      bio: "Michael oversees the day-to-day operations of all Team Tails chapters. With a background in nonprofit management, he ensures our volunteers have the resources and support they need to succeed.",
+      bio: " As Vice President, she brings experience in government advocacy and student journalism through organizations like Silver Chips Online.",
       email: "michael.chen@teamtails.org",
       phone: "(555) 123-0002",
       location: "National Headquarters, Washington DC",
@@ -27,7 +27,7 @@ const Officers = () => {
     {
       name: "Rafi Pikofsy",
       title: "Vice President",
-      bio: "Emily develops and implements training programs for our volunteers. She has a passion for education and has created curriculum used by animal welfare organizations across the country.",
+      bio: "As Vice President, he contributes leadership and dedication gained through representing the USA for gymnastics.",
       email: "emily.rodriguez@teamtails.org",
       phone: "(555) 123-0003",
       location: "Training Center, Austin TX",
@@ -36,7 +36,7 @@ const Officers = () => {
     {
       name: "Maddie Seelke",
       title: "Head of PR",
-      bio: "David leads our community engagement efforts and helps establish new chapters. His grassroots organizing experience has been instrumental in our expansion into rural communities.",
+      bio: "As Head of PR, she brings experience in communications and leadership through international events run through CIEE.",
       email: "david.thompson@teamtails.org",
       phone: "(555) 123-0004",
       location: "Regional Office, Denver CO",
@@ -54,7 +54,7 @@ const Officers = () => {
     {
       name: "Brendan Weinstein",
       title: "Head of Technology",
-      bio: "Robert oversees our financial operations and ensures transparency in all our funding. His background in nonprofit accounting helps us maximize the impact of every dollar we manage.",
+      bio: "As Head of Technology, he contributes technical expertise in many coding languages as well as web design.",
       email: "robert.williams@teamtails.org",
       phone: "(555) 123-0006",
       location: "National Headquarters, Washington DC",
@@ -114,10 +114,7 @@ const Officers = () => {
                       <Phone className="w-4 h-4 mr-3" />
                       <span>{officer.phone}</span>
                     </div>
-                    <div className="flex items-center text-gray-600">
-                      <MapPin className="w-4 h-4 mr-3" />
-                      <span>{officer.location}</span>
-                    </div>
+
                   </div>
                 </CardContent>
               </Card>
