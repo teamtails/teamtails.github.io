@@ -1,0 +1,61 @@
+
+import { Heart, Facebook, Twitter, Instagram } from "lucide-react";
+
+export const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white py-12">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div className="col-span-2 md:col-span-1">
+            <div className="flex items-center space-x-2 mb-4">
+              <Heart className="w-8 h-8 text-red-400" />
+              <span className="text-2xl font-bold">Team Tails</span>
+            </div>
+            <p className="text-gray-400 leading-relaxed">
+              Connecting loving hearts with furry souls in need. Every tail deserves a happy ending.
+            </p>
+            <div className="flex space-x-4 mt-6">
+              <Facebook className="w-6 h-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors duration-300" />
+              <Twitter className="w-6 h-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors duration-300" />
+              <Instagram className="w-6 h-6 text-gray-400 hover:text-pink-400 cursor-pointer transition-colors duration-300" />
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#" className="hover:text-white transition-colors duration-300">About Us</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Adopt</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Volunteer</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Donate</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Pet Care Tips</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Success Stories</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Events</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-300">Newsletter</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>123 Animal Rescue Lane</li>
+              <li>Pawsville, ST 12345</li>
+              <li>(555) 123-TAILS</li>
+              <li>info@teamtails.org</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 Team Tails. All rights reserved. Made with ❤️ for animals in need.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
