@@ -1,4 +1,5 @@
 
+import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Users, Calendar, Mail } from "lucide-react";
@@ -92,6 +93,7 @@ const Chapters = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
+      <Navigation />
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
         <div className="container mx-auto px-6 text-center">

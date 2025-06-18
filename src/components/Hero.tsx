@@ -44,7 +44,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              className="border-white bg-white text-blue-700 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
               asChild
             >
               <Link to="/chapters">Find Your Chapter</Link>
