@@ -10,7 +10,8 @@ export const About = () => {
             Our Mission
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Team Tails is a nationwide volunteer organization dedicated to improving animal welfare through community action, education, and advocacy. We believe that every person can make a difference in the lives of animals.
+           A Collective of Nine Schools Joining Forces to Make an Impact in Animal Welfare and the Support of Our Shelters
+
           </p>
         </div>
         
@@ -21,7 +22,9 @@ export const About = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Community Outreach</h3>
             <p className="text-gray-600 leading-relaxed">
-              We organize local events and educational programs to raise awareness about animal welfare in our communities.
+              We are dedicated to creating opportunities for youth to interact and help their local shelter.
+
+
             </p>
           </div>
           
@@ -31,7 +34,7 @@ export const About = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Volunteer Support</h3>
             <p className="text-gray-600 leading-relaxed">
-              We provide training, resources, and coordination for volunteers working with local animal shelters and rescue organizations.
+              We advertise and spread awareness about animals in need of homes. 
             </p>
           </div>
           
@@ -41,7 +44,7 @@ export const About = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Advocacy</h3>
             <p className="text-gray-600 leading-relaxed">
-              We advocate for better animal welfare policies and support legislation that protects animals at all levels of government.
+              We advocate for animal rights along with animal welfare issues across the globe.
             </p>
           </div>
         </div>
