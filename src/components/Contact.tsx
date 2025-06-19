@@ -24,11 +24,11 @@ export const Contact = () => {
             <MessageSquare className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-4">Want To Get Started or Have Questions?</h3>
             <p className="text-white/90 mb-6">
-              Get in touch with our team
+              Get in touch with our team!
             </p>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwsmPJVkmdtQZfMzNmPGWPmKCCvXKvnfWJfvZzLpcCCRQnXlCGCMttlcjNbfTzhtnrgKq">
             <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
-              Email Us!
+              Email Us
             </Button></a>
             </div>
             </div>
