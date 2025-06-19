@@ -9,23 +9,10 @@ export const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch with our team",
-      contact: "volunteer@teamtails.org",
+      contact: "teamtailsmd@gmail.com",
       action: "Send Email"
     },
-    {
-      icon: Phone,
-      title: "Call Us",
-      description: "Speak with a volunteer coordinator",
-      contact: "(555) 123-TAILS",
-      action: "Call Now"
-    },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      description: "National headquarters",
-      contact: "123 Volunteer Way, Washington, DC 20001",
-      action: "Get Directions"
-    }
+
   ];
 
   return (
@@ -56,6 +43,7 @@ export const Contact = () => {
                 <p className="mb-4 text-white/90">{method.contact}</p>
                 <Button className="bg-white text-blue-700 hover:bg-blue-50 font-semibold">
                   {method.action}
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwsmPJVkmdtQZfMzNmPGWPmKCCvXKvnfWJfvZzLpcCCRQnXlCGCMttlcjNbfTzhtnrgKq"></a>
                 </Button>
               </CardContent>
             </Card>
