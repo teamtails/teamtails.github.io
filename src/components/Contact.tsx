@@ -1,19 +1,10 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, MessageSquare } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 export const Contact = () => {
-  const contactMethods = [
-    {
-      icon: Mail,
-      title: "Email Us",
-      description: "Get in touch with our team",
-      contact: "teamtailsmd@gmail.com",
-      action: "Send Email"
-    },
 
-  ];
+
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
@@ -27,29 +18,20 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {contactMethods.map((method, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                  <method.icon className="w-8 h-8" />
-                </div>
-                <CardTitle className="text-xl">{method.title}</CardTitle>
-                <CardDescription className="text-white/80">
-                  {method.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="mb-4 text-white/90">{method.contact}</p>
-                <Button className="bg-white text-blue-700 hover:bg-blue-50 font-semibold">
-                  {method.action}
-                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwsmPJVkmdtQZfMzNmPGWPmKCCvXKvnfWJfvZzLpcCCRQnXlCGCMttlcjNbfTzhtnrgKq"></a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
+
+                <div className="text-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
+            <MessageSquare className="w-12 h-12 mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
+            <p className="text-white/90 mb-6">
+              Get in touch with our team
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwsmPJVkmdtQZfMzNmPGWPmKCCvXKvnfWJfvZzLpcCCRQnXlCGCMttlcjNbfTzhtnrgKq">
+            <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
+              Start a Conversation
+            </Button></a>
+            </div>
+            </div>
         <div className="text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
             <MessageSquare className="w-12 h-12 mx-auto mb-4" />
