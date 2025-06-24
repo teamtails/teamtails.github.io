@@ -8,83 +8,67 @@ import { Footer } from "@/components/Footer";
 const Chapters = () => {
   const chapters = [
     {
-      name: "Team Tails Los Angeles",
-      state: "California",
-      city: "Los Angeles",
-      established: "2018",
-      volunteers: 45,
+      name: "Team Tails Churchill",
+      state: "Maryland",
+      city: "Potomac",
+      leader: "Beckett Bonness",
       contact: "la@teamtails.org",
-      meetingDay: "Second Saturday",
       description: "Our LA chapter focuses on supporting local shelters in the greater Los Angeles area. We organize monthly adoption events and educational workshops."
     },
     {
-      name: "Team Tails Austin",
-      state: "Texas",
-      city: "Austin",
-      established: "2019",
-      volunteers: 32,
+      name: "Team Tails Wheaton",
+      state: "Maryland",
+      city: "Wheaton",
+      leader: "Rafi Pikofsky-Christiansen",
       contact: "austin@teamtails.org",
-      meetingDay: "First Tuesday",
       description: "The Austin chapter is known for its innovative community outreach programs and partnerships with local veterinary schools."
     },
     {
-      name: "Team Tails Chicago",
-      state: "Illinois",
-      city: "Chicago",
-      established: "2017",
-      volunteers: 58,
+      name: "Team Tails Rockville",
+      state: "Maryland",
+      city: "Rockville",
+      leader: "Rebecca Vasquez",
       contact: "chicago@teamtails.org",
-      meetingDay: "Third Thursday",
       description: "Our Chicago chapter covers the Chicagoland area and has pioneered several training programs now used nationwide."
     },
     {
-      name: "Team Tails Denver",
-      state: "Colorado",
-      city: "Denver",
-      established: "2020",
-      volunteers: 28,
+      name: "Team Tails Blair",
+      state: "Maryland",
+      city: "Silver Spring",
+      leader: "Molly O'Brien & Maddie Seelke",
       contact: "denver@teamtails.org",
-      meetingDay: "Second Wednesday",
       description: "The Denver chapter specializes in rural outreach and works with mountain communities to improve animal welfare."
     },
     {
-      name: "Team Tails Miami",
-      state: "Florida",
-      city: "Miami",
-      established: "2019",
-      volunteers: 41,
-      contact: "miami@teamtails.org",
-      meetingDay: "First Saturday",
+      name: "Team Tails Damascus",
+      state: "Maryland",
+      city: "Damascus",
+      leader: "Caleigh Hoffman",
+      contact: "austin@teamtails.org",
       description: "Our Miami chapter focuses on multilingual community education and disaster preparedness for pets."
     },
     {
-      name: "Team Tails Seattle",
-      state: "Washington",
-      city: "Seattle",
-      established: "2018",
-      volunteers: 36,
-      contact: "seattle@teamtails.org",
-      meetingDay: "Third Monday",
+      name: "Team Tails Einstein",
+      state: "Maryland",
+      city: "Kensington",
+      leader: "Ella Tomas & Alex Hirsch",
+      contact: "austin@teamtails.org",
       description: "The Seattle chapter is known for its environmental awareness campaigns and sustainable pet care initiatives."
     },
     {
-      name: "Team Tails Atlanta",
-      state: "Georgia",
-      city: "Atlanta",
-      established: "2021",
-      volunteers: 24,
-      contact: "atlanta@teamtails.org",
-      meetingDay: "Second Friday",
+      name: "Team Tails Walter Johnson",
+      state: "Maryland",
+      city: "Bethesda",
+      leader: "Jay Resnik",
+      contact: "austin@teamtails.org",
       description: "Our newest chapter in Atlanta is rapidly growing and focuses on spay/neuter awareness campaigns."
     },
     {
-      name: "Team Tails Phoenix",
-      state: "Arizona",
-      city: "Phoenix",
-      established: "2020",
-      volunteers: 31,
-      contact: "phoenix@teamtails.org",
-      meetingDay: "First Thursday",
+      name: "Team Tails Northwood",
+      state: "Maryland",
+      city: "Rockville",
+      leader: "Lucia Rocha",
+      contact: "austin@teamtails.org",
       description: "The Phoenix chapter specializes in desert climate pet care education and heat safety awareness."
     }
   ];
@@ -143,7 +127,6 @@ const Chapters = () => {
                 <CardHeader>
                   <CardTitle className="text-xl text-gray-800">{chapter.name}</CardTitle>
                   <CardDescription className="text-gray-600">
-                    Established {chapter.established}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -153,14 +136,6 @@ const Chapters = () => {
                     <div className="flex items-center text-gray-600">
                       <MapPin className="w-4 h-4 mr-3" />
                       <span>{chapter.city}, {chapter.state}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Users className="w-4 h-4 mr-3" />
-                      <span>{chapter.volunteers} active volunteers</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Calendar className="w-4 h-4 mr-3" />
-                      <span>Meets {chapter.meetingDay}</span>
                     </div>
                     <div className="flex items-center text-gray-600">
                       <Mail className="w-4 h-4 mr-3" />
