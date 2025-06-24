@@ -25,7 +25,7 @@ const Officers = () => {
       image: "/Molly.jpg"
     },
     {
-      name: "Rafi Pikofsy",
+      name: "Rafi Pikofsky-Christiansen",
       title: "Vice President",
       bio: "As Vice President, he contributes leadership and dedication gained through representing the USA for gymnastics.",
       email: "emily.rodriguez@teamtails.org",
@@ -41,15 +41,6 @@ const Officers = () => {
       phone: "(555) 123-0004",
       location: "Regional Office, Denver CO",
       image: "/Maddie.jpg"
-    },
-    {
-      name: "Brandon Zhang",
-      title: "Head of Administration",
-      bio: "Lisa manages our communications and keeps our organization running smoothly. She coordinates between chapters and ensures consistent messaging across all our platforms.",
-      email: "lisa.park@teamtails.org",
-      phone: "(555) 123-0005",
-      location: "National Headquarters, Washington DC",
-      image: "/Brandon.jpg"
     },
     {
       name: "Brendan Weinstein",
@@ -102,19 +93,6 @@ const Officers = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
-                  
-                  <div className="space-y-3">
-                    <div className="flex items-center text-gray-600">
-                      <Mail className="w-4 h-4 mr-3" />
-                      <a href={`mailto:${officer.email}`} className="hover:text-blue-600 transition-colors">
-                        {officer.email}
-                      </a>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Phone className="w-4 h-4 mr-3" />
-                      <span>{officer.phone}</span>
-                    </div>
-
                   </div>
                 </CardContent>
               </Card>
