@@ -9,7 +9,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-700 to-green-600 text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#31389f] via-[#992032] to-[#f8cd21] text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full animate-pulse"></div>
@@ -36,7 +36,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              className="bg-white text-[#31389f] hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
               asChild
             >
               <Link to="/about">Our Mission</Link>
@@ -44,7 +44,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white bg-white text-blue-700 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              className="border-white bg-white text-[#31389f] hover:bg-blue-50 hover:text-[#31389f] font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
               asChild
             >
               <Link to="/chapters">Find Your Chapter</Link>

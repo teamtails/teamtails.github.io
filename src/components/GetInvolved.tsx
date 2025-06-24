@@ -10,14 +10,14 @@ export const GetInvolved = () => {
       title: "Volunteer",
       description: "Join our amazing team and help us care for animals in need. Every hour makes a difference.",
       action: "Join Us",
-      color: "bg-blue-50 border-blue-200 hover:bg-blue-100"
+      color: "bg-[#31389f]/5 border-[#31389f]/20 hover:bg-[#31389f]/10"
     },
     {
       icon: HandHeart,
       title: "Start a Chapter",
       description: "Bring Team Tails to your community and help us expand our reach to help more animals.",
       action: "Learn More",
-      color: "bg-green-50 border-green-200 hover:bg-green-100"
+      color: "bg-[#992032]/5 border-[#992032]/20 hover:bg-[#992032]/10"
     }
   ];
 
@@ -52,7 +52,7 @@ export const GetInvolved = () => {
                   {way.description}
                 </CardDescription>
                 <Button 
-                  className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
+                  className="w-full bg-[#31389f] hover:bg-[#2a3091] text-white font-semibold transition-all duration-300"
                   onClick={scrollToContact}
                 >
                   {way.action}

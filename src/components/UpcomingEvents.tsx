@@ -63,12 +63,12 @@ export const UpcomingEvents = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <CardTitle className="text-xl text-gray-800 mb-2">{event.title}</CardTitle>
-                    <CardDescription className="text-blue-600 font-semibold">
+                    <CardDescription className="text-[#31389f] font-semibold">
                       {event.chapter}
                     </CardDescription>
                   </div>
-                  <div className="bg-blue-100 rounded-lg p-2">
-                    <Calendar className="w-5 h-5 text-blue-600" />
+                  <div className="bg-[#31389f]/10 rounded-lg p-2">
+                    <Calendar className="w-5 h-5 text-[#31389f]" />
                   </div>
                 </div>
               </CardHeader>
@@ -94,7 +94,7 @@ export const UpcomingEvents = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button className="w-full bg-[#31389f] hover:bg-[#2a3091]">
                   Register for Event
                 </Button>
               </CardContent>

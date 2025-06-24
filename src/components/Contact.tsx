@@ -3,11 +3,8 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
 
 export const Contact = () => {
-
-
-
   return (
-    <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-r from-[#31389f] to-[#992032] text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -18,8 +15,7 @@ export const Contact = () => {
           </p>
         </div>
         
-
-                <div className="text-center">
+        <div className="text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
             <MessageSquare className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-4">Want To Get Started or Have Questions?</h3>
@@ -27,7 +23,7 @@ export const Contact = () => {
               Get in touch with our team!
             </p>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwsmPJVkmdtQZfMzNmPGWPmKCCvXKvnfWJfvZzLpcCCRQnXlCGCMttlcjNbfTzhtnrgKq">
-            <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
+            <Button size="lg" className="bg-white text-[#31389f] hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
               Email Us
             </Button></a>
             </div>

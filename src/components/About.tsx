@@ -17,8 +17,8 @@ export const About = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center group hover:scale-105 transition-transform duration-300">
-            <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
-              <Heart className="w-10 h-10 text-blue-600" />
+            <div className="bg-[#31389f]/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#31389f]/20 transition-colors duration-300">
+              <Heart className="w-10 h-10 text-[#31389f]" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Outreach</h3>
             <p className="text-gray-600 leading-relaxed">
@@ -29,8 +29,8 @@ export const About = () => {
           </div>
           
           <div className="text-center group hover:scale-105 transition-transform duration-300">
-            <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
-              <HandHeart className="w-10 h-10 text-green-600" />
+            <div className="bg-[#992032]/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#992032]/20 transition-colors duration-300">
+              <HandHeart className="w-10 h-10 text-[#992032]" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Awareness</h3>
             <p className="text-gray-600 leading-relaxed">
@@ -39,8 +39,8 @@ export const About = () => {
           </div>
           
           <div className="text-center group hover:scale-105 transition-transform duration-300">
-            <div className="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors duration-300">
-              <Users className="w-10 h-10 text-purple-600" />
+            <div className="bg-[#f8cd21]/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#f8cd21]/30 transition-colors duration-300">
+              <Users className="w-10 h-10 text-[#992032]" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Advocacy</h3>
             <p className="text-gray-600 leading-relaxed">
