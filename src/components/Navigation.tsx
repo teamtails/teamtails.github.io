@@ -13,26 +13,26 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Heart className="w-8 h-8 text-[#31389f]" />
+            <Heart className="w-8 h-8 text-blue-600" />
             <span className="text-2xl font-bold text-gray-800">Team Tails</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-[#31389f] transition-colors duration-300">
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
               Home
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-[#31389f] transition-colors duration-300">
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
               About Us
             </Link>
-            <Link to="/chapters" className="text-gray-700 hover:text-[#31389f] transition-colors duration-300">
+            <Link to="/chapters" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
               Find Your Chapter
             </Link>
-            <Link to="/officers" className="text-gray-700 hover:text-[#31389f] transition-colors duration-300">
+            <Link to="/officers" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
               Meet Our Officers
             </Link>
             <Button 
-              className="bg-[#31389f] hover:bg-[#2a3091] text-white"
+              className="bg-blue-600 hover:bg-blue-700 text-white"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join Our Mission
@@ -54,34 +54,34 @@ export const Navigation = () => {
             <div className="flex flex-col space-y-4">
               <Link 
                 to="/" 
-                className="text-gray-700 hover:text-[#31389f] transition-colors duration-300"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 to="/about" 
-                className="text-gray-700 hover:text-[#31389f] transition-colors duration-300"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link 
                 to="/chapters" 
-                className="text-gray-700 hover:text-[#31389f] transition-colors duration-300"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Find Your Chapter
               </Link>
               <Link 
                 to="/officers" 
-                className="text-gray-700 hover:text-[#31389f] transition-colors duration-300"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Meet Our Officers
               </Link>
               <Button 
-                className="bg-[#31389f] hover:bg-[#2a3091] text-white w-fit"
+                className="bg-blue-600 hover:bg-blue-700 text-white w-fit"
                 onClick={() => {
                   setIsMenuOpen(false);
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
