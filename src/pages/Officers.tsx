@@ -73,43 +73,38 @@ const Officers = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-8">
             {officers.map((officer, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <><Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <div className="flex items-start space-x-4">
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                      <img
-  src={officer.image}
-  alt={officer.name}
-  className="w-20 h-20 rounded-full object-cover"
-/>
-                     </div>
-                    <div className="flex-1">
-                      <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
-                      <CardDescription className="text-lg text-blue-600 font-semibold">
-                        {officer.title}
-                      </CardDescription>
+                      <img src={officer.image} alt={officer.name} className="w-20 h-20 rounded-full object-cover" />
                     </div>
+                    <img
+                      src={officer.image}
+                      alt={officer.name}
+                      className="w-20 h-20 rounded-full object-cover" />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
+                    <CardDescription className="text-lg text-blue-600 font-semibold">
+                      {officer.title}
+                    </CardDescription>
                   </div>
                 </CardHeader>
-                <CardContent>
+              </Card>
+              
+              <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
-                  
+
                   <div className="space-y-3">
-                    <div className="flex items-center text-gray-600">
-                      <Mail className="w-4 h-4 mr-3" />
-                      <a href={`mailto:${officer.email}`} className="hover:text-blue-600 transition-colors">
-                        {officer.email}
-                      </a>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Phone className="w-4 h-4 mr-3" />
-                      <span>{officer.phone}</span>
-                    </div>
+                    
+                   
 
                   </div>
-                </CardContent>
-              </Card>
+                </CardContent></>
+              
             ))}
+
           </div>
         </div>
       </section>
