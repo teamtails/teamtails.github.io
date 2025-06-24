@@ -79,10 +79,7 @@ const Officers = () => {
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                       <img src={officer.image} alt={officer.name} className="w-20 h-20 rounded-full object-cover" />
                     </div>
-                    <img
-                      src={officer.image}
-                      alt={officer.name}
-                      className="w-20 h-20 rounded-full object-cover" />
+                    
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
@@ -96,11 +93,8 @@ const Officers = () => {
               <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
 
-                  <div className="space-y-3">
+                  
                     
-                   
-
-                  </div>
                 </CardContent></>
               
             ))}
