@@ -85,17 +85,18 @@ const Officers = () => {
                     <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
                     <CardDescription className="text-lg text-blue-600 font-semibold">
                       {officer.title}
+                      <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
                     </CardDescription>
                   </div>
                 </CardHeader>
               </Card>
               
-              <CardContent>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
+              
+                  
 
                   
                     
-                </CardContent></>
+                </>
               
             ))}
 
