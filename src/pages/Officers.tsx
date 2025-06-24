@@ -82,7 +82,7 @@ const Officers = () => {
   alt={officer.name}
   className="w-20 h-20 rounded-full object-cover"
 />
-                    </div>
+                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
                       <CardDescription className="text-lg text-blue-600 font-semibold">
@@ -93,6 +93,19 @@ const Officers = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">{officer.bio}</p>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center text-gray-600">
+                      <Mail className="w-4 h-4 mr-3" />
+                      <a href={`mailto:${officer.email}`} className="hover:text-blue-600 transition-colors">
+                        {officer.email}
+                      </a>
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <Phone className="w-4 h-4 mr-3" />
+                      <span>{officer.phone}</span>
+                    </div>
+
                   </div>
                 </CardContent>
               </Card>
