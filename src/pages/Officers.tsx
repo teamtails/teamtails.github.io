@@ -60,7 +60,7 @@ const Officers = () => {
       <section 
         className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: "@/background.png"
+          backgroundImage: "background.png"
         }}
       >
         {/* Dark overlay for better text readability */}
