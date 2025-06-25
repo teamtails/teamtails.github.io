@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-rounded-full flex items-center justify-center">
-                <img src={"/favicon.ico"} className="w-10 h-10 rounded-full object-cover" />
+                <img src={"/favicon.ico"} className="w-8 h-8 rounded-full object-cover" />
               </div>
               <span className="text-2xl font-bold">Team Tails</span>
             </div>
