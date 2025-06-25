@@ -5,8 +5,8 @@ export const Footer = () => {
   return (
     <footer 
       className="text-white py-12 bg-cover bg-center relative"
-      style={{ backgroundImage: `url("/background.png")` }}
-    >
+      style={{ backgroundImage: `url("/ground.png")` }}
+  >
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
