@@ -79,8 +79,16 @@ const Chapters = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
       {/* Header */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
-        <div className="container mx-auto px-6 text-center">
+      <section 
+        className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our Chapters
           </h1>
@@ -104,13 +112,13 @@ const Chapters = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">
-                {chapters.reduce((sum, chapter) => sum + chapter.volunteers, 0)}
+                {chapters.reduce((sum, chapter) => sum + (chapter.volunteers || 0), 0)}
               </div>
               <div className="text-gray-600">Total Volunteers</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-orange-600">
-                {Math.round(chapters.reduce((sum, chapter) => sum + chapter.volunteers, 0) / chapters.length)}
+                {Math.round(chapters.reduce((sum, chapter) => sum + (chapter.volunteers || 0), 0) / chapters.length) || 0}
               </div>
               <div className="text-gray-600">Avg. Chapter Size</div>
             </div>
@@ -156,8 +164,16 @@ const Chapters = () => {
       </section>
 
       {/* Start a Chapter CTA */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <div className="container mx-auto px-6 text-center">
+      <section 
+        className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="container mx-auto px-6 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Don't See Your Area?
           </h2>

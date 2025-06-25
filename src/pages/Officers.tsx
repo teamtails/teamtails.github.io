@@ -57,8 +57,16 @@ const Officers = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
       {/* Header */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
-        <div className="container mx-auto px-6 text-center">
+      <section 
+        className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Meet Our Officers
           </h1>
@@ -73,13 +81,12 @@ const Officers = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-8">
             {officers.map((officer, index) => (
-              <><Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <div className="flex items-start space-x-4">
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                       <img src={officer.image} alt={officer.name} className="w-20 h-20 rounded-full object-cover" />
                     </div>
-                    
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-2xl text-gray-800">{officer.name}</CardTitle>
@@ -90,16 +97,7 @@ const Officers = () => {
                   </div>
                 </CardHeader>
               </Card>
-              
-              
-                  
-
-                  
-                    
-                </>
-              
             ))}
-
           </div>
         </div>
       </section>
