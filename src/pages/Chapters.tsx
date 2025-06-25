@@ -76,7 +76,9 @@ const Chapters = () => {
   const states = [...new Set(chapters.map(chapter => chapter.state))].sort();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
+    <div className="min-h-screen" style={{
+      backgroundImage: `url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+    }}>
       <Navigation />
       {/* Header */}
       <section 
@@ -111,15 +113,11 @@ const Chapters = () => {
               <div className="text-gray-600">States</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">
-                {chapters.reduce((sum, chapter) => sum + (chapter.volunteers || 0), 0)}
-              </div>
+              <div className="text-3xl font-bold text-purple-600">150+</div>
               <div className="text-gray-600">Total Volunteers</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-orange-600">
-                {Math.round(chapters.reduce((sum, chapter) => sum + (chapter.volunteers || 0), 0) / chapters.length) || 0}
-              </div>
+              <div className="text-3xl font-bold text-orange-600">20</div>
               <div className="text-gray-600">Avg. Chapter Size</div>
             </div>
           </div>
