@@ -3,7 +3,10 @@ import { Heart, Facebook, Twitter, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer 
+      className="text-white py-12 bg-cover bg-center relative"
+      style={{ backgroundImage: `url("/background.png")` }}
+    >
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
