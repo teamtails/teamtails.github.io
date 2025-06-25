@@ -13,7 +13,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Heart className="w-8 h-8 text-blue-600" />
+            <img src={"/favicon.ico"} className="w-12 h-12 rounded-full object-cover" />
             <span className="text-2xl font-bold text-gray-800">Team Tails</span>
           </Link>
 
