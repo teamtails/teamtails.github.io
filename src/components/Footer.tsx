@@ -11,10 +11,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Heart className="w-8 h-8 text-red-400" />
+              <div className="w-8 h-8 bg-rounded-full flex items-center justify-center">
+                <img src={"/favicon.ico"} className="w-8 h-8 rounded-full object-cover" />
+              </div>
               <span className="text-2xl font-bold">Team Tails</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-white leading-relaxed">
               Connecting passionate volunteers to create positive change in animal welfare communities nationwide.
             </p>
             <div className="flex space-x-4 mt-6">
