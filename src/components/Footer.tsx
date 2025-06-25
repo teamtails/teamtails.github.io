@@ -48,14 +48,13 @@ export const Footer = () => {
             <ul className="space-y-2 text-white">
               <li>123 Volunteer Way</li>
               <li>Washington, DC 20001</li>
-              <li>(555) 123-TAILS</li>
               <li>info@teamtails.org</li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Team Tails. All rights reserved. Made with ❤️ by volunteers for animals.</p>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-white">
+          <p>&copy; 2025 Team Tails. All rights reserved. Made with ❤️ by volunteers for animals.</p>
         </div>
       </div>
     </footer>
