@@ -33,12 +33,8 @@ export const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-            Team Tails
-          </h1>
-          
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Join our community of passionate volunteers making a difference in animal welfare across the nation.
+            Join our community of passionate volunteers making a difference in animal welfare across Maryland!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
