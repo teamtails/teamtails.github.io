@@ -29,7 +29,7 @@ export const Hero = () => {
         <div className="animate-fade-in">
           <div className="flex justify-center mb-8">
             <div className="bg-white/20 backdrop-blur-sm rounded-full p-6">
-              <Heart className="w-16 h-16 text-white animate-pulse" />
+              <img src={"/favicon.ico"} className="w-30 h-30" />
             </div>
           </div>
           
