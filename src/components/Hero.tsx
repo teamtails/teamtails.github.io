@@ -12,7 +12,7 @@ export const Hero = () => {
     <section 
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fteslaclub.sk%2F%3Ft%3D403177516&psig=AOvVaw3KawZGNh7IIy_cIqRLQSB_&ust=1752242746839000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNj38I27so4DFQAAAAAdAAAAABAf')`
+        backgroundImage: `url('https://media.npr.org/assets/img/2016/07/21/gettyimages-546938728_custom-77b28bb741ee05c3a02a9aa97893421c7583c6ca.jpg?s=1600&c=85&f=webp')`
       }}
     >
       {/* Dark overlay for better text readability */}
