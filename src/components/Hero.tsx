@@ -28,9 +28,7 @@ export const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <div className="flex justify-center mb-8">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full p-6">
-              <img src={"/favicon.ico"} className="w-30 h-30" />
-            </div>
+            <img src={"/favicon.ico"} className="w-30 h-30" />
           </div>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
