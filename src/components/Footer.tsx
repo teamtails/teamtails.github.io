@@ -53,7 +53,7 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-white">
+        <div className="border-t border-white mt-8 pt-8 text-center text-white">
           <p>&copy; 2025 Team Tails. All rights reserved. Made with ❤️ by volunteers for animals.</p>
         </div>
       </div>
