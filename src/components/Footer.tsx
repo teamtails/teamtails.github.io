@@ -19,7 +19,6 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <Instagram className="w-6 h-6 text-white hover:text-pink-400 cursor-pointer transition-colors duration-300" />
-              <LinkedIn className="w-6 h-6 text-white hover:text-blue-400 cursor-pointer transition-colors duration-300" />
             </div>
           </div>
           
