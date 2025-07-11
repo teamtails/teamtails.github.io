@@ -14,19 +14,18 @@ export const Footer = () => {
               </div>
               <span className="text-2xl font-bold">Team Tails</span>
             </div>
-            <p className="text-white leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Connecting passionate volunteers to create positive change in animal welfare communities across Maryland.
             </p>
             <div className="flex space-x-4 mt-6">
-              <Facebook className="w-6 h-6 text-white hover:text-blue-400 cursor-pointer transition-colors duration-300" />
-              <Twitter className="w-6 h-6 text-white hover:text-blue-400 cursor-pointer transition-colors duration-300" />
               <Instagram className="w-6 h-6 text-white hover:text-pink-400 cursor-pointer transition-colors duration-300" />
+              <LinkedIn className="w-6 h-6 text-white hover:text-blue-400 cursor-pointer transition-colors duration-300" />
             </div>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Get Involved</h4>
-            <ul className="space-y-2 text-white">
+            <ul className="space-y-2 text-black">
               <li><a href="#" className="hover:text-gray-400 transition-colors duration-300">Join a Chapter</a></li>
               <li><a href="/chapters" className="hover:text-gray-400 transition-colors duration-300">Find Your Chapter</a></li>
               <li><a href="#" className="hover:text-gray-400 transition-colors duration-300">Start a Chapter</a></li>
@@ -35,7 +34,7 @@ export const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">About Us</h4>
-            <ul className="space-y-2 text-white">
+            <ul className="space-y-2 text-gray-600">
               <li><a href="/about" className="hover:text-gray-400 transition-colors duration-300">Our Mission</a></li>
               <li><a href="/officers" className="hover:text-gray-400 transition-colors duration-300">Meet Our Officers</a></li>
             </ul>
