@@ -12,7 +12,7 @@ export const Hero = () => {
     <section 
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('https://media.npr.org/assets/img/2016/07/21/gettyimages-546938728_custom-77b28bb741ee05c3a02a9aa97893421c7583c6ca.jpg?s=1600&c=85&f=webp')`
+        backgroundImage: `url('https://www.shutterstock.com/image-photo/aerial-drone-view-free-grazing-600nw-2282064069.jpg')`
       }}
     >
       {/* Dark overlay for better text readability */}
