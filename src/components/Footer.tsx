@@ -24,7 +24,7 @@ export const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Get Involved</h4>
-            <ul className="space-y-2 text-black">
+            <ul className="space-y-2 text-gray-600">
               <li><a href="#" className="hover:text-gray-400 transition-colors duration-300">Join a Chapter</a></li>
               <li><a href="/chapters" className="hover:text-gray-400 transition-colors duration-300">Find Your Chapter</a></li>
               <li><a href="#" className="hover:text-gray-400 transition-colors duration-300">Start a Chapter</a></li>
@@ -41,7 +41,7 @@ export const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-white">
+            <ul className="space-y-2 text-gray-600">
               <li>Email us at:</li>
               <li>teamtailsmd@gmail.com</li>
             </ul>
