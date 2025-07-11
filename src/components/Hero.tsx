@@ -11,9 +11,7 @@ export const Hero = () => {
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('https://videocdn.cdnpk.net/videos/07dcebf6-69be-4130-a637-5d61b7784382/horizontal/thumbnails/large.jpg')`
-      }}
+      style={{ backgroundImage: `url("/ground.png")` }}
     >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40"></div>
