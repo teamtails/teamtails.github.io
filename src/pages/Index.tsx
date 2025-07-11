@@ -20,10 +20,6 @@ const Index = () => {
       <hr className="border-white" />
       <GetInvolved />
       <hr className="border-white" />
-      <UpcomingEvents />      
-      <hr className="border-white" />
-      <Contact />
-      <hr className="border-white" />
       <Footer />
     </div>
   );
