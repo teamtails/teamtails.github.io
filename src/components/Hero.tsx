@@ -13,8 +13,6 @@ export const Hero = () => {
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url("/ground.png")` }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
