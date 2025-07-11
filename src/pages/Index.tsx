@@ -13,7 +13,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
       <Hero />
-      <hr className="my-4 border-gray-300" />
+      <hr className="my-2 border-white" />
       <About />
       <Impact />
       <GetInvolved />
