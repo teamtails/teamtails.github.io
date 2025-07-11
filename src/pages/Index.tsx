@@ -12,18 +12,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
+      <hr className="my-4 border-white" />
       <Hero />
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <About />
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <Impact />
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <GetInvolved />
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <UpcomingEvents />      
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <Contact />
-      <div className="border-t border-white mt-16 pt-16 text-center text-white">
       <Footer />
     </div>
   );
