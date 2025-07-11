@@ -12,8 +12,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
-      <hr className="my-4 border-white" />
       <Hero />
+      <hr className="my-4 border-gray-300" />
       <About />
       <Impact />
       <GetInvolved />
