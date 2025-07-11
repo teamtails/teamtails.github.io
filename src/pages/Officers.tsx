@@ -10,45 +10,30 @@ const Officers = () => {
       name: "Beckett Bonness",
       title: "President",
       bio: "As President, he brings experience from business leadership through DECA, the World Trade Center Institute, and economics advocacy.",
-      email: "sarah.johnson@teamtails.org",
-      phone: "(555) 123-0001",
-      location: "National Headquarters, Washington DC",
       image: "/econme-copy.jpg"
     },
     {
       name: "Molly O'Brien",
       title: "Vice President",
       bio: " As Vice President, she brings experience in government advocacy and student journalism through organizations like Silver Chips Online.",
-      email: "michael.chen@teamtails.org",
-      phone: "(555) 123-0002",
-      location: "National Headquarters, Washington DC",
       image: "/Molly.jpg"
     },
     {
       name: "Rafi Pikofsky-Christiansen",
       title: "Vice President",
       bio: "As Vice President, he contributes leadership and dedication gained through representing the USA for gymnastics.",
-      email: "emily.rodriguez@teamtails.org",
-      phone: "(555) 123-0003",
-      location: "Training Center, Austin TX",
       image: "/Rafi.png"
     },
     {
       name: "Maddie Seelke",
       title: "Head of PR",
       bio: "As Head of PR, she brings experience in communications and leadership through international events run through CIEE.",
-      email: "david.thompson@teamtails.org",
-      phone: "(555) 123-0004",
-      location: "Regional Office, Denver CO",
       image: "/Maddie.jpg"
     },
     {
       name: "Brendan Weinstein",
       title: "Head of Technology",
       bio: "As Head of Technology, he contributes technical expertise in many coding languages as well as web design.",
-      email: "robert.williams@teamtails.org",
-      phone: "(555) 123-0006",
-      location: "National Headquarters, Washington DC",
       image: "/Brendan.PNG"
     }
   ];
