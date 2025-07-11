@@ -1,6 +1,6 @@
 
 import { Navigation } from "@/components/Navigation";
-import { About as AboutSection } from "@/components/About";
+import { About} from "@/components/About";
 import { Impact } from "@/components/Impact";
 import { Footer } from "@/components/Footer";
 
@@ -13,7 +13,7 @@ const About = () => {
       <hr className="border-white" />
       <Impact />
       <hr className="border-white" />
-      <Footer />
+      <Footer />a
     </div>
   );
 };
