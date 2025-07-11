@@ -17,7 +17,7 @@ export const GetInvolved = () => {
       title: "Start a Chapter",
       description: "Bring Team Tails to your community and help us expand our reach to help more animals.",
       action: "Learn More",
-      color: "bg-green-50 border-green-200 hover:bg-green-100"
+      color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100"
     }
   ];
 
