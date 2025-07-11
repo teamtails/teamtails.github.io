@@ -48,7 +48,7 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white mt-8 pt-8 text-center text-white">
+        <div className="border-t border-white mt-8 pt-8 text-center text-black">
           <p>&copy; 2025 Team Tails. All rights reserved. Website: Brendan Weinstien and Beckett Bonness</p>
         </div>
       </div>
