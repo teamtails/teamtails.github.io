@@ -23,17 +23,14 @@ export const Navigation = () => {
               Home
             </Link>
             <Link to="/chapters" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
-              Find Your Chapter
+              Chapters
             </Link>
             <Link to="/officers" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
               Meet Our Officers
             </Link>
-            <Button 
-              className="bg-blue-600 hover:bg-blue-700 text-white"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Join Our Mission
-            </Button>
+            <Link to="/officers" className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+              Events
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
