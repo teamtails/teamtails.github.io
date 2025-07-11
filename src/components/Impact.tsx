@@ -18,7 +18,7 @@ export const Impact = () => {
             What We're Doing Now
           </h2>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Sign up for volunteer projects through our Instagram. Get in contact with us for advocacy projects!
+            Sign up for volunteer projects through our Instagram or here, on our website. Get in contact with us for advocacy projects!
           </p>
         </div>
         
