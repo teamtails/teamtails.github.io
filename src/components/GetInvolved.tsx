@@ -30,10 +30,10 @@ export const GetInvolved = () => {
       style={{ backgroundImage: `url("/ground.png")` }} >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Get Involved
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Join our volunteer community and help us make a meaningful impact in animal welfare. 
             Every volunteer contribution helps us reach more animals in need.
           </p>
