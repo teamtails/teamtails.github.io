@@ -3,7 +3,10 @@ import { Users, Heart, HandHeart } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 bg-cover bg-center relative"
+      style={{ backgroundImage: `url("/ground.png")` }}
+    >
+  
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
