@@ -54,7 +54,7 @@ const Officers = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-blue-50">
       <Navigation />
       {/* Header */}
       <section 
