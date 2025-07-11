@@ -11,8 +11,6 @@ export const Impact = () => {
       className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: `url("/ground.png")` }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
