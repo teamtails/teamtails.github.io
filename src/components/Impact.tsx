@@ -1,10 +1,9 @@
 
 export const Impact = () => {
   const stats = [
-    { number: "2,500+", label: "Volunteers Trained", color: "text-blue-600" },
-    { number: "1,800+", label: "Community Events", color: "text-green-600" },
-    { number: "50+", label: "Active Chapters", color: "text-purple-600" },
-    { number: "15", label: "Years of Service", color: "text-orange-600" }
+    { number: "2", label: "Ongoing Advocacy Iniatives", color: "text-blue-600" },
+    { number: "5", label: "Ongoing Volunteer Iniatives", color: "text-green-600" },
+    { number: "9", label: "Active Chapters", color: "text-purple-600" },
   ];
 
   return (
@@ -27,7 +26,7 @@ export const Impact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-11">
           {stats.map((stat, index) => (
             <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 hover:bg-white/30 transition-all duration-300 hover:scale-105">
