@@ -17,7 +17,7 @@ export const Footer = () => {
               <span className="text-2xl font-bold">Team Tails</span>
             </div>
             <p className="text-white leading-relaxed">
-              Connecting passionate volunteers to create positive change in animal welfare communities nationwide.
+              Connecting passionate volunteers to create positive change in animal welfare communities across Maryland.
             </p>
             <div className="flex space-x-4 mt-6">
               <Facebook className="w-6 h-6 text-white hover:text-blue-400 cursor-pointer transition-colors duration-300" />
@@ -46,9 +46,8 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-white">
-              <li>123 Volunteer Way</li>
-              <li>Washington, DC 20001</li>
-              <li>info@teamtails.org</li>
+              <li>Email us at:</li>
+              <li>teamtailsmd@gmail.com</li>
             </ul>
           </div>
         </div>
