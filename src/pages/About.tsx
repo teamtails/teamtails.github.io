@@ -6,12 +6,10 @@ import { Footer } from "@/components/Footer";
 
 const About = () => {
   return (
-      <Navigation />
-        <AboutSection />
+    <Navigation />
+      <AboutSection />
         <Impact />
-      </div>
-      <Footer />
-    </div>
+    <Footer />
   );
 };
 
