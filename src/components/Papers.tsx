@@ -12,9 +12,9 @@ export const Papers = () => {
       action: "Read More",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
       images: [
-        "../../../public/emmitt/1.jpeg",
-        "../../../public/emmitt/2.jpeg",
-        "../../../public/emmitt/3.jpeg"
+        "../../../emmitt/1.jpeg",
+        "../../../emmitt/2.jpeg",
+        "../../../emmitt/3.jpeg"
       ]
     }
   ];
