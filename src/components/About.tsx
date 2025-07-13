@@ -1,7 +1,7 @@
 
 import { Users, Heart, HandHeart } from "lucide-react";
 
-export const About = () => {
+export const AboutPage = () => {
   return (
     <section id="about" className="py-12 bg-cover bg-center relative"
       style={{ backgroundImage: `url("/ground.png")` }}
