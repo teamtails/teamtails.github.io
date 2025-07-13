@@ -108,10 +108,11 @@ const Chapters = () => {
                       <span>{chapter.leader}</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                    Join This Chapter
-                  </Button>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsd0i3-TMq5vk5BviI2D2ZQxawA6WFpTo9fQHbO0v3Ad8Ymg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                      Join This Chapter
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
