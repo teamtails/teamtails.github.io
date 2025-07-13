@@ -41,6 +41,7 @@ const Officers = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-blue-600">
       <Navigation />
+      <hr className="border-white" />
       {/* Header */}
       <section 
         className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
