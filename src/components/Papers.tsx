@@ -5,8 +5,8 @@ import { Users, HandHeart } from "lucide-react";
 export const Papers = () => {
   const ways = [
     {
-      title: "Emmitt",
-      description: "blank",
+      title: "Emmitt the Cat",
+      description: "Takoma Park, 2007-2025",
       action: "Read here",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
       image: "../../../Molly.jpg"
@@ -33,7 +33,6 @@ export const Papers = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => (
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col`}>
-              {/* Increased height to h-64 and added padding p-4 */}
               <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
                 <img src={way.image} alt={way.title} className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover" />
               </div>
