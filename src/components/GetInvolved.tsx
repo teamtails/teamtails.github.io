@@ -10,14 +10,16 @@ export const GetInvolved = () => {
       title: "Volunteer",
       description: "Join our amazing team and help us care for animals in need. Every hour makes a difference.",
       action: "Join Us",
-      color: "bg-blue-50 border-blue-200 hover:bg-blue-100"
+      color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      link: "/events"
     },
     {
       icon: HandHeart,
       title: "Start a Chapter",
       description: "Bring Team Tails to your community and help us expand our reach to help more animals.",
-      action: "Learn More",
-      color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100"
+      action: "Apply Now",
+      color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScyBASx2aqdYI2ClW35ohcKlhqbF0WhRF7u5AFaDlKTXCjirQ/viewform?usp=dialog"
     }
   ];
 
@@ -52,12 +54,14 @@ export const GetInvolved = () => {
                 <CardDescription className="text-gray-600 mb-6 leading-relaxed">
                   {way.description}
                 </CardDescription>
-                <Button 
-                  className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
-                  onClick={scrollToContact}
-                >
-                  {way.action}
-                </Button>
+                <a href= {way.link} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
+                    onClick={scrollToContact}
+                  >
+                    {way.action}
+                  </Button>
+                  </a>
               </CardContent>
             </Card>
           ))}
