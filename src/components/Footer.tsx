@@ -26,7 +26,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Get Involved</h4>
             <ul className="space-y-2 text-gray-600">
               <li><a href="/chapters" className="hover:text-gray-400 transition-colors duration-300">Find and Join a Chapter</a></li>
-              <li><a href="#" className="hover:text-gray-400 transition-colors duration-300">Start a Chapter</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScyBASx2aqdYI2ClW35ohcKlhqbF0WhRF7u5AFaDlKTXCjirQ/viewform?usp=dialog" className="hover:text-gray-400 transition-colors duration-300">Start a Chapter</a></li>
             </ul>
           </div>
           

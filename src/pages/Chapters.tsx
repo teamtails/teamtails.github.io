@@ -127,9 +127,11 @@ const Chapters = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Help us expand our reach by starting a new Team Tails chapter in your community. We'll provide all the support and resources you need.
           </p>
-          <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
-            Start a New Chapter
-          </Button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScyBASx2aqdYI2ClW35ohcKlhqbF0WhRF7u5AFaDlKTXCjirQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
+              Start a New Chapter
+            </Button>
+          </a>
         </div>
       </section>
       <Footer />
