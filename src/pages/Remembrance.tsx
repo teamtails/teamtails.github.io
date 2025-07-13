@@ -8,7 +8,7 @@ import { UpcomingEvents } from "@/components/UpcomingEvents";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
-const Index = () => {
+const Remembrance = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
@@ -25,4 +25,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Remembrance;
