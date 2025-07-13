@@ -62,12 +62,11 @@ const Chapters = () => {
   return (
     <div className="py-20 bg-gradient-to-b from-white to-blue-600" >
       <Navigation />
-      {/* Header */}s
-      
       <section 
         className="text-white py-20 bg-white"
         style={{ backgroundImage: `url("/ground.png")` }} 
       >
+      <hr className="border-white" />
         
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
