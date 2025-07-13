@@ -66,8 +66,6 @@ const Chapters = () => {
         className="text-white py-20 bg-white"
         style={{ backgroundImage: `url("/ground.png")` }} 
       >
-      <hr className="border-white" />
-        
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our Chapters
@@ -77,6 +75,7 @@ const Chapters = () => {
           </p>
         </div>
       </section>
+      <hr className="border-white" />
       {/* Chapters Grid */}
       <section className="py-20">
         <div className="container mx-auto px-6">

@@ -41,7 +41,6 @@ const Officers = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-600">
       <Navigation />
-      <hr className="border-white" />
       {/* Header */}
       <section 
         className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
@@ -49,7 +48,6 @@ const Officers = () => {
           backgroundImage: `url("/ground.png")`
         }}
       >
-        {/* <div className="absolute inset-0 bg-black/50"></div> */}
         
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -60,6 +58,7 @@ const Officers = () => {
           </p>
         </div>
       </section>
+      <hr className="border-white" />
 
       {/* Officers Grid */}
       <section className="py-20">
