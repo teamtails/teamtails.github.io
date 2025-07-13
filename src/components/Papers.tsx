@@ -21,20 +21,15 @@ export const Papers = () => {
 
   return (
     <section
-      className="py-20" // Removed bg-gray-50 as gradient will cover it
-      style={{
-        // KEY CHANGE: Replaced backgroundImage with a linear-gradient
-        backgroundImage: 'linear-gradient(to bottom, #FFFFFF, #ADD8E6)', // Fades from white (#FFFFFF) to light blue (#ADD8E6)
-        backgroundAttachment: 'fixed', // Optional: keeps the gradient fixed while scrolling
-        backgroundSize: 'cover', // Ensures the gradient covers the section area
-      }}
+      // KEY CHANGE: Replaced style prop with Tailwind gradient classes
+      className="py-20 bg-gradient-to-b from-white to-blue-600"
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">
             Remembrance
           </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-blue-600 max-w-3xl mx-auto leading-relaxed">
             Help us in remembering these beloved animals by reading each of their bios
           </p>
         </div>
