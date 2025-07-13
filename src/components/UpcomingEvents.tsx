@@ -6,49 +6,28 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react";
 export const UpcomingEvents = () => {
   const events = [
     {
-      title: "Volunteer Training Workshop",
-      date: "March 15, 2024",
-      time: "10:00 AM - 2:00 PM",
-      location: "Austin Community Center",
-      chapter: "Team Tails Austin",
-      description: "Learn the basics of animal care and volunteer safety protocols.",
-      spots: "12 spots available"
-    },
-    {
-      title: "Community Outreach Fair",
-      date: "March 22, 2024",
-      time: "9:00 AM - 4:00 PM",
-      location: "Chicago Downtown Park",
-      chapter: "Team Tails Chicago",
-      description: "Join us for a day of community education and pet care awareness.",
+      title: "Social Media Project: Meeting 2",
+      date: "July 17th, 2025",
+      time: "5:00 - 6:00 PM",
+      location: "Zoom",
+      chapter: "All Chapters",
+      description: "Help create Instagram Reels and TikToks to spread our message!",
       spots: "Volunteers needed"
     },
     {
-      title: "Monthly Chapter Meeting",
-      date: "April 3, 2024",
-      time: "7:00 PM - 8:30 PM",
-      location: "Virtual Meeting",
+      title: "Birdhouse Design Planning",
+      date: "July 18th, 2025",
+      time: "5:00 - 6:00 PM",
+      location: "Zoom",
       chapter: "All Chapters",
-      description: "Monthly planning meeting for all Team Tails volunteers.",
-      spots: "Open to all"
-    },
-    {
-      title: "Pet Safety Education Drive",
-      date: "April 12, 2024",
-      time: "11:00 AM - 3:00 PM",
-      location: "Los Angeles City Mall",
-      chapter: "Team Tails Los Angeles",
-      description: "Educational booth about pet safety and responsible ownership.",
-      spots: "8 spots available"
+      description: "Help plan our upcoming birdhouse making event!",
+      spots: "Volunteers needed"
     }
   ];
 
   return (
     <section 
         className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
-        style={{
-          backgroundImage: `url("/ground.png")`
-        }}
       >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
@@ -57,7 +36,7 @@ export const UpcomingEvents = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Join us at upcoming volunteer events and training sessions. 
-            Together, we can make a bigger impact in our communities.
+            Summer meetings and events usually include all chapters.
           </p>
         </div>
         <hr className="border-white" />
@@ -99,9 +78,11 @@ export const UpcomingEvents = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Register for Event
-                </Button>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Register for Event
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
