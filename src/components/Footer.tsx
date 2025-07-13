@@ -42,7 +42,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-gray-600">
               <li>Email us at:</li>
               <li>
-                <a href="https://mailto:teamtailsmd@gmail.com">
+                <a href="mailto:teamtailsmd@gmail.com">
                   teamtailsmd@gmail.com
                 </a>
               </li>
@@ -53,9 +53,9 @@ export const Footer = () => {
         <div className="border-t border-white mt-8 pt-8 text-center text-black">
           <p>
             &copy; 2025 Team Tails. All rights reserved. Website:
-            <a href="https://mailto:brendan.weinstein@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Brendan Weinstein </a>
+            <a href="mailto:brendan.weinstein@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Brendan Weinstein </a>
             and 
-            <a href="https://mailto:beckett.bonness@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Beckett Bonness</a>
+            <a href="mailto:beckett.bonness@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Beckett Bonness</a>
           </p>
       </div>
       </div>
