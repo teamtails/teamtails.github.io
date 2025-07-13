@@ -26,10 +26,10 @@ export const Papers = () => {
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Remembrance
           </h2>
-          <p className="text-xl text-blue-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
             Help us in remembering these beloved animals by reading each of their bios
           </p>
         </div>
