@@ -41,10 +41,8 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-600">
                 <li>Email us at:</li>
-                <li> 
-                  <a href="mailto:teamtailsmd@gmail.com" className="text-blue-600 hover:underline">
-                    teamtailsmd@gmail.com
-                  </a>
+                <li>
+                  teamtailsmd@gmail.com
                 </li> 
               </ul>
           </div>
@@ -52,22 +50,7 @@ export const Footer = () => {
         
         <div className="border-t border-white mt-8 pt-8 text-center text-black">
           <p>
-            &copy; 2025 Team Tails. All rights reserved. Website:
-            <span className="inline-block mx-1">
-              <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=brendan.weinstein@gmail.com"
-  className="text-blue-600 hover:underline"
-  target="_blank" rel="noopener noreferrer"
->
-  Brendan Weinstein
-</a>
-
-
-            </span>
-            and
-            <span className="inline-block mx-1">
-              <a href="mailto:beckett.bonness@gmail.com" className="text-blue-600 hover:underline"> Beckett Bonness</a>
-            </span>
+  Brendan Weinstein(brendan.weinstein@gmail.com) and Beckett Bonness(beckett.bonness@gmail.com).            
           </p>
         </div>
       </div>
