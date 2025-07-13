@@ -54,7 +54,17 @@ export const Footer = () => {
           <p>
             &copy; 2025 Team Tails. All rights reserved. Website:
             <span className="inline-block mx-1">
-              <a href="mailto:brendan.weinstein@gmail.com" className="text-blue-600 hover:underline"> Brendan Weinstein </a>
+              <a
+  href="mailto:brendan.weinstein@gmail.com"
+  className="text-blue-600 hover:underline"
+  onClick={(e) => {
+    e.preventDefault();
+    window.location.href = 'mailto:brendan.weinstein@gmail.com';
+  }}
+>
+  Brendan Weinstein
+</a>
+
             </span>
             and
             <span className="inline-block mx-1">
