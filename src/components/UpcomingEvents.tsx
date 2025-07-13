@@ -12,7 +12,8 @@ export const UpcomingEvents = () => {
       location: "Zoom",
       chapter: "All Chapters",
       description: "Help create Instagram Reels and TikToks to spread our message!",
-      spots: "Volunteers needed"
+      spots: "Volunteers needed",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=dialog"
     },
     {
       title: "Birdhouse Design Planning",
@@ -21,7 +22,8 @@ export const UpcomingEvents = () => {
       location: "Zoom",
       chapter: "All Chapters",
       description: "Help plan our upcoming birdhouse making event!",
-      spots: "Volunteers needed"
+      spots: "Volunteers needed",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfxgPfbQjE6uQcwcpoCmPLG4_4-IvNKFhuws-8TloarWRFxvg/viewform?usp=dialog"
     }
   ];
 
@@ -78,7 +80,7 @@ export const UpcomingEvents = () => {
                   </div>
                 </div>
                 
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href= {event.link} target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
                     Register for Event
                   </Button>
