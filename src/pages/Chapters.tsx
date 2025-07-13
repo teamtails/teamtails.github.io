@@ -67,7 +67,7 @@ const Chapters = () => {
       {/* Header */}
       
       <section 
-        className="py-20 bg-gradient-to-b from-white to-blue-600"
+        className="text-white py-20 bg-gradient-to-b from-white to-blue-600"
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
