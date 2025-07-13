@@ -50,6 +50,12 @@ const Chapters = () => {
       leader: "Ella Tomas & Alex Hirsch",
     },
     {
+      name: "Team Tails Walter Johnson",
+      state: "Maryland",
+      city: "Bethesda",
+      leader: "Jay Resnik",
+    },
+    {
       name: "Team Tails Northwood",
       state: "Maryland",
       city: "Rockville",
