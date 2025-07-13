@@ -1,16 +1,21 @@
 
 import { Navigation } from "@/components/Navigation";
-import { About } from "@/components/About";
+import { About} from "@/components/About";
+import { Impact } from "@/components/Impact";
 import { Footer } from "@/components/Footer";
 
-const AboutPage = () => {
+const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-blue-600">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       <Navigation />
+      <hr className="border-white" />
       <About />
-      <Footer />
+      <hr className="border-white" />
+      <Impact />
+      <hr className="border-white" />
+      <Footer />a
     </div>
   );
 };
 
-export default AboutPage;
+export default About;
