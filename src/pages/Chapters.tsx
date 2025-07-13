@@ -60,7 +60,7 @@ const Chapters = () => {
   const states = [...new Set(chapters.map(chapter => chapter.state))].sort();
 
   return (
-    <div className="py-20 bg-gradient-to-b from-white to-blue-600" >
+    <div className="bg-gradient-to-b from-white to-blue-600" >
       <Navigation />
       <section 
         className="text-white py-20 bg-white"
@@ -119,9 +119,6 @@ const Chapters = () => {
           backgroundImage: `url("/ground.png")`
         }}
       >
-        {/* Dark overlay for better text readability */}
-          {/* <div className="absolute inset-0 bg-black/50"></div> */}
-        
         <div className="container mx-auto px-6 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Don't See Your Area?
