@@ -2,21 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HandHeart } from "lucide-react";
 
-export const GetInvolved = () => {
+export const Papers = () => {
   const ways = [
     {
-      icon: Users,
-      title: "Volunteer",
-      description: "Join our amazing team and help us care for animals in need. Every hour makes a difference.",
-      action: "Join Us",
+      title: "Emmitt",
+      description: "blank",
+      action: "Read here",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100"
-    },
-    {
-      icon: HandHeart,
-      title: "Start a Chapter",
-      description: "Bring Team Tails to your community and help us expand our reach to help more animals.",
-      action: "Learn More",
-      color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100"
     }
   ];
 
@@ -41,8 +33,8 @@ export const GetInvolved = () => {
           {ways.map((way, index) => (
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
               <CardHeader className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <way.icon className="w-8 h-8 text-gray-700" />
+                <div className="w-16 h-32 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="../public/emmitt.png" alt = "Emmitt" w-14 h-24 />
                 </div>
                 <CardTitle className="text-xl text-gray-800">{way.title}</CardTitle>
               </CardHeader>
