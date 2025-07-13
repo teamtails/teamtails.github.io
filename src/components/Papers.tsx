@@ -34,7 +34,7 @@ export const Papers = () => {
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
               <CardHeader className="text-center">
                 <div className="w-16 h-32 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <img src="../public/emmitt.png" alt = "Emmitt" w-14 h-24 />
+                  <img src="../../../Molly.jpg" alt = "Emmitt" w-14 h-24 />
                 </div>
                 <CardTitle className="text-xl text-gray-800">{way.title}</CardTitle>
               </CardHeader>
