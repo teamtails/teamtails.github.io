@@ -69,7 +69,7 @@ const Officers = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <div className="flex items-start space-x-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                    <div className="w-30 h-30 bg-gradient-to-br from-blue-500 to-white rounded-full flex items-center justify-center text-white text-2xl font-bold">
                       <img src={officer.image} alt={officer.name} className="w-20 h-20 rounded-full object-cover" />
                     </div>
                   </div>
