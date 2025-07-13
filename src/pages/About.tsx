@@ -1,6 +1,6 @@
 
 import { Navigation } from "@/components/Navigation";
-import { AboutPage} from "@/components/About";
+import { AboutPage } from "@/components/About";
 import { Impact } from "@/components/Impact";
 import { Footer } from "@/components/Footer";
 
