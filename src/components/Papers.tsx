@@ -3,9 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HandHeart } from "lucide-react";
 
-// Define the duration of the fade transition in milliseconds
-const FADE_DURATION = 800; // This controls how long the fade effect takes (e.g., 0.8 seconds)
-const INTERVAL_TIME = 4000; // Time each image is displayed before starting to fade (e.g., 4 seconds)
+const FADE_DURATION = 800; // how long the fade is
+const INTERVAL_TIME = 4000; 
 
 export const Papers = () => {
   const ways = [
@@ -53,18 +52,17 @@ export const Papers = () => {
                 const intervalId = setInterval(() => {
                   setIsFading(true); // Start fading out the current image
 
-                  // After the fade-out duration, switch to the next image and fade it in
                   setTimeout(() => {
                     setCurrentImageIndex(prevIndex =>
                       (prevIndex + 1) % way.images.length
                     );
-                    setIsFading(false); // Start fading in the new current image
-                  }, FADE_DURATION); // This timeout should match the CSS transition duration
-                }, INTERVAL_TIME); // Total time per image (display + fade)
+                    setIsFading(false); 
+                  }, FADE_DURATION); 
+                }, INTERVAL_TIME);
 
-                return () => clearInterval(intervalId); // Cleanup on component unmount
+                return () => clearInterval(intervalId);
               }
-            }, [way.images]); // Depend on way.images to re-run if images change
+            }, [way.images]); 
 
             const toggleExpansion = () => {
               setIsExpanded(!isExpanded);
@@ -91,19 +89,19 @@ export const Papers = () => {
                 <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
                   {/* Current image (fades out) */}
                   <img
-                    key={`img-${currentImageIndex}`} // Key helps React re-render or transition correctly
+                    key={`img-${currentImageIndex}`}
                     src={way.images[currentImageIndex]}
                     alt={way.title}
                     className={`absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover transition-opacity duration-${FADE_DURATION} ${isFading ? 'opacity-0' : 'opacity-100'}`}
-                    style={{ zIndex: 2 }} // Ensure current image is on top
+                    style={{ zIndex: 2 }} 
                   />
-                  {/* Next image (preloads and will be visible under current image when it fades) */}
+ 
                   <img
-                    key={`img-next-${currentImageIndex}`} // Unique key based on current index
+                    key={`img-next-${currentImageIndex}`} 
                     src={nextImageSrc}
                     alt={way.title}
                     className={`absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover`}
-                    style={{ zIndex: 1 }} // Next image is behind the current one
+                    style={{ zIndex: 1 }} 
                   />
                 </div>
                 <CardContent className="text-center p-4 flex-grow flex flex-col">
