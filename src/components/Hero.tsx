@@ -34,13 +34,6 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
-              asChild
-            >
-              <Link to="/about">Our Mission</Link>
-            </Button>
-            <Button 
-              size="lg" 
               variant="outline" 
               className="border-white bg-white text-blue-700 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
               asChild
