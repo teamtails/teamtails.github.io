@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react'; // Import useEffect
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HandHeart } from "lucide-react";
+
+// Define the duration of the fade transition in milliseconds
+const FADE_DURATION = 800; // This controls how long the fade effect takes (e.g., 0.8 seconds)
+const INTERVAL_TIME = 4000; // Time each image is displayed before starting to fade (e.g., 4 seconds)
 
 export const Papers = () => {
   const ways = [
@@ -40,23 +44,27 @@ export const Papers = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => {
             const [isExpanded, setIsExpanded] = useState(false);
-            // State for current image index, initialized to 0
             const [currentImageIndex, setCurrentImageIndex] = useState(0);
+            // new state to control the fade animation
+            const [isFading, setIsFading] = useState(false);
 
-            // Effect to shuffle images
             useEffect(() => {
-              // Ensure there are images to shuffle before setting interval
               if (way.images && way.images.length > 1) {
                 const intervalId = setInterval(() => {
-                  setCurrentImageIndex(prevIndex =>
-                    (prevIndex + 1) % way.images.length
-                  );
-                }, 4000); 
+                  setIsFading(true); // Start fading out the current image
 
-              
-                return () => clearInterval(intervalId);
+                  // After the fade-out duration, switch to the next image and fade it in
+                  setTimeout(() => {
+                    setCurrentImageIndex(prevIndex =>
+                      (prevIndex + 1) % way.images.length
+                    );
+                    setIsFading(false); // Start fading in the new current image
+                  }, FADE_DURATION); // This timeout should match the CSS transition duration
+                }, INTERVAL_TIME); // Total time per image (display + fade)
+
+                return () => clearInterval(intervalId); // Cleanup on component unmount
               }
-            }, [way.images]);
+            }, [way.images]); // Depend on way.images to re-run if images change
 
             const toggleExpansion = () => {
               setIsExpanded(!isExpanded);
@@ -73,16 +81,29 @@ export const Papers = () => {
               ));
             };
 
+            const nextImageSrc = way.images[(currentImageIndex + 1) % way.images.length];
+
             return (
               <Card
                 key={index}
                 className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col ${isExpanded ? 'h-auto' : ''}`}
               >
                 <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
+                  {/* Current image (fades out) */}
                   <img
-                    src={way.images[currentImageIndex]} 
+                    key={`img-${currentImageIndex}`} // Key helps React re-render or transition correctly
+                    src={way.images[currentImageIndex]}
                     alt={way.title}
-                    className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover"
+                    className={`absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover transition-opacity duration-${FADE_DURATION} ${isFading ? 'opacity-0' : 'opacity-100'}`}
+                    style={{ zIndex: 2 }} // Ensure current image is on top
+                  />
+                  {/* Next image (preloads and will be visible under current image when it fades) */}
+                  <img
+                    key={`img-next-${currentImageIndex}`} // Unique key based on current index
+                    src={nextImageSrc}
+                    alt={way.title}
+                    className={`absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover`}
+                    style={{ zIndex: 1 }} // Next image is behind the current one
                   />
                 </div>
                 <CardContent className="text-center p-4 flex-grow flex flex-col">
