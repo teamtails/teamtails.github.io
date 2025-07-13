@@ -20,7 +20,7 @@ const Chapters = () => {
       leader: "Rafi Pikofsky-Christiansen",
     },
     {
-      name: "Team Tails RM",
+      name: "Team Tails Richard Montgomery",
       state: "Maryland",
       city: "Rockville",
       leader: "Rohan Rai",
