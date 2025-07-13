@@ -102,7 +102,7 @@ const Chapters = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center text-gray-600">
                       <Users className="w-4 h-4 mr-3" />
-                      <span>{chapter.leader}
+                      <span>{chapter.leader}</span>
                     </div>
                   </div>
                   
