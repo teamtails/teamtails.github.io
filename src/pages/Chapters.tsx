@@ -65,11 +65,9 @@ const Chapters = () => {
     }}>
       <Navigation />
       {/* Header */}
+      
       <section 
-        className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
-        }}
+        className="py-20 bg-gradient-to-b from-white to-blue-600"
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -101,6 +99,12 @@ const Chapters = () => {
                       <span>{chapter.city}, {chapter.state}</span>
                     </div>
                   </div>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-gray-600">
+                      <Users className="w-4 h-4 mr-3" />
+                      <span>{chapter.leader}
+                    </div>
+                  </div>
                   
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
                     Join This Chapter
@@ -111,7 +115,7 @@ const Chapters = () => {
           </div>
         </div>
       </section>
-
+      <hr className="border-white" />
       {/* Start a Chapter CTA */}
       <section 
         className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
@@ -134,7 +138,6 @@ const Chapters = () => {
           </Button>
         </div>
       </section>
-
       <Footer />
     </div>
   );
