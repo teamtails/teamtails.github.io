@@ -8,11 +8,13 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions: # Add this block
+      contents: write # Grant write permissions for repository content
     steps:
       - name: Checkout 
         uses: actions/checkout@v4
 
-      - name: Install dependencies ⬇
+      - name: Install dependencies 
         run: npm install
 
       - name: Build 
@@ -22,6 +24,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # This is the crucial part! Change to ./build if using Create React App
-          cname: teamtails.org 
-          # full_deploy: true # Use this if you want to completely replace content, otherwise it appends
+          publish_dir: ./dist # Change to ./build if using Create React App
