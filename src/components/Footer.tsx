@@ -61,17 +61,13 @@ Connecting passionate volunteers to create positive change in animal welfare com
 &copy; 2025 Team Tails. All rights reserved. Website:
 <span className="inline-block mx-1">
 <a
-  href="mailto:brendan.weinstein@gmail.com"
   href="https://mail.google.com/mail/?view=cm&fs=1&to=brendan.weinstein@gmail.com"
-className="text-blue-600 hover:underline"
-  onClick={(e) => {
-    e.preventDefault();
-    window.location.href = 'mailto:brendan.weinstein@gmail.com';
-  }}
+  className="text-blue-600 hover:underline"
   target="_blank" rel="noopener noreferrer"
 >
-Brendan Weinstein
+  Brendan Weinstein
 </a>
+
 
 
 </span>
