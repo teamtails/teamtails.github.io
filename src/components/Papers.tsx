@@ -22,7 +22,8 @@ export const Papers = () => {
   return (
     <>
       <section
-        className="py-20 bg-gray-50"
+        // KEY CHANGE: Changed 'py-20' to 'pt-20' to remove bottom padding
+        className="pt-20 bg-gray-50"
         style={{
           backgroundImage: `url("/ground.png")`,
           backgroundRepeat: 'no-repeat',
@@ -90,7 +91,7 @@ export const Papers = () => {
       <div
         className="w-full h-96 flex items-center justify-center text-gray-600"
         style={{
-          backgroundImage: `url("/ground2.png")`, // Updated to ground2.png
+          backgroundImage: `url("/ground2.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
