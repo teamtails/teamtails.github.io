@@ -33,8 +33,9 @@ export const Papers = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => (
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col`}>
-              <div className="relative w-full h-40 overflow-hidden rounded-t-md">
-                <img src={way.image} alt={way.title} className="absolute inset-0 w-full h-full object-cover" />
+              {/* Increased height to h-64 and added padding p-4 */}
+              <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
+                <img src={way.image} alt={way.title} className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover" />
               </div>
               <CardContent className="text-center p-4 flex-grow flex flex-col justify-center">
                 <CardTitle className="text-xl text-gray-800 mb-2">{way.title}</CardTitle>
