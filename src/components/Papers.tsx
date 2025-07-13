@@ -9,7 +9,7 @@ export const Papers = () => {
       description: "blank",
       action: "Read here",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
-      image: "../../../Molly.jpg" // Added image property to the object
+      image: "../../../Molly.jpg"
     }
   ];
 
@@ -32,18 +32,13 @@ export const Papers = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => (
-            <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
-              <CardHeader className="text-center">
-                <div className="w-16 h-32 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-md">
-                  {/* Corrected image tag: added className for w-14 and h-24 */}
-                  <img src={way.image} alt={way.title} className="w-14 h-24 object-cover rounded-full" />
-                </div>
-                <CardTitle className="text-xl text-gray-800">{way.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-gray-600 mb-6 leading-relaxed">
-                  {way.description}
-                </CardDescription>
+            <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col`}>
+              <div className="relative w-full h-40 overflow-hidden rounded-t-md">
+                <img src={way.image} alt={way.title} className="absolute inset-0 w-full h-full object-cover" />
+              </div>
+              <CardContent className="text-center p-4 flex-grow flex flex-col justify-center">
+                <CardTitle className="text-xl text-gray-800 mb-2">{way.title}</CardTitle>
+                <CardDescription className="text-gray-600 mb-4 leading-relaxed flex-grow">{way.description}</CardDescription>
                 <Button
                   className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
                   onClick={scrollToContact}
