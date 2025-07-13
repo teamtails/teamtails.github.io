@@ -54,7 +54,7 @@ export const Footer = () => {
           <p>
             &copy; 2025 Team Tails. All rights reserved. Website:
             <a href="mailto:brendan.weinstein@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Brendan Weinstein</a>
-            and
+             and 
             <a href="mailto:beckett.bonness@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Beckett Bonness</a>
           </p>
       </div>
