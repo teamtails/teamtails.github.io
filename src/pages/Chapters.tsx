@@ -60,14 +60,13 @@ const Chapters = () => {
   const states = [...new Set(chapters.map(chapter => chapter.state))].sort();
 
   return (
-    <div className="min-h-screen" style={{
-      backgroundImage: `url('/ground.png')`
-    }}>
+    <div className="py-20 bg-gradient-to-b from-white to-blue-600" >
       <Navigation />
       {/* Header */}
       
       <section 
-        className="text-white py-20 bg-gradient-to-b from-white to-blue-600"
+        className="text-white py-20 bg-white"
+        style={{ backgroundImage: `url("/ground.png")` }} 
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
