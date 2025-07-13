@@ -44,7 +44,12 @@ export const UpcomingEvents = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section 
+        className="py-20 text-white bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url("/ground.png")`
+        }}
+      >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -55,7 +60,7 @@ export const UpcomingEvents = () => {
             Together, we can make a bigger impact in our communities.
           </p>
         </div>
-        
+        <hr className="border-white" />
         <div className="grid lg:grid-cols-2 gap-8">
           {events.map((event, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
