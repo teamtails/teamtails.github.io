@@ -20,85 +20,69 @@ export const Papers = () => {
   };
 
   return (
-    <>
-      <section
-        // KEY CHANGE: Changed 'py-20' to 'pt-20' to remove bottom padding
-        className="pt-20 bg-gray-50"
-        style={{
-          backgroundImage: `url("/ground.png")`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top center',
-          backgroundSize: '100% auto',
-        }}
-      >
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Remembrance
-            </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Help us in remembering these beloved animals by reading each of their bios
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {ways.map((way, index) => {
-              const [isExpanded, setIsExpanded] = useState(false);
-
-              const toggleExpansion = () => {
-                setIsExpanded(!isExpanded);
-              };
-
-              const displayText = isExpanded ? way.lDescription : way.sDescription;
-
-              const renderTextWithLineBreaks = (text) => {
-                return text.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i < text.split('\n').length - 1 && <br />}
-                  </React.Fragment>
-                ));
-              };
-
-              return (
-                <Card
-                  key={index}
-                  className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col ${isExpanded ? 'h-auto' : ''}`}
-                >
-                  <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
-                    <img src={way.image} alt={way.title} className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover" />
-                  </div>
-                  <CardContent className="text-center p-4 flex-grow flex flex-col">
-                    <CardTitle className="text-xl text-gray-800 mb-2">{way.title}</CardTitle>
-                    <CardDescription className="text-gray-600 mb-4 leading-relaxed">
-                      {renderTextWithLineBreaks(displayText)}
-                    </CardDescription>
-                    <Button
-                      className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300 mt-auto"
-                      onClick={toggleExpansion}
-                    >
-                      {isExpanded ? "Read Less" : way.action}
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+    <section
+      className="py-20" // Removed bg-gray-50 as gradient will cover it
+      style={{
+        // KEY CHANGE: Replaced backgroundImage with a linear-gradient
+        backgroundImage: 'linear-gradient(to bottom, #FFFFFF, #ADD8E6)', // Fades from white (#FFFFFF) to light blue (#ADD8E6)
+        backgroundAttachment: 'fixed', // Optional: keeps the gradient fixed while scrolling
+        backgroundSize: 'cover', // Ensures the gradient covers the section area
+      }}
+    >
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Remembrance
+          </h2>
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+            Help us in remembering these beloved animals by reading each of their bios
+          </p>
         </div>
-      </section>
 
-      {/* Section for the bottom overflow image (ground2.png) */}
-      <div
-        className="w-full h-96 flex items-center justify-center text-gray-600"
-        style={{
-          backgroundImage: `url("/ground2.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        {/* Optional: Add content here if needed */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {ways.map((way, index) => {
+            const [isExpanded, setIsExpanded] = useState(false);
+
+            const toggleExpansion = () => {
+              setIsExpanded(!isExpanded);
+            };
+
+            const displayText = isExpanded ? way.lDescription : way.sDescription;
+
+            const renderTextWithLineBreaks = (text) => {
+              return text.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < text.split('\n').length - 1 && <br />}
+                </React.Fragment>
+              ));
+            };
+
+            return (
+              <Card
+                key={index}
+                className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col ${isExpanded ? 'h-auto' : ''}`}
+              >
+                <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
+                  <img src={way.image} alt={way.title} className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover" />
+                </div>
+                <CardContent className="text-center p-4 flex-grow flex flex-col">
+                  <CardTitle className="text-xl text-gray-800 mb-2">{way.title}</CardTitle>
+                  <CardDescription className="text-gray-600 mb-4 leading-relaxed">
+                    {renderTextWithLineBreaks(displayText)}
+                  </CardDescription>
+                  <Button
+                    className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300 mt-auto"
+                    onClick={toggleExpansion}
+                  >
+                    {isExpanded ? "Read Less" : way.action}
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
       </div>
-    </>
+    </section>
   );
 };
