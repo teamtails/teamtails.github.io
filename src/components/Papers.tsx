@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HandHeart } from "lucide-react";
 
-const FADE_DURATION = 800; // how long the fade is
-const INTERVAL_TIME = 4000; 
+const FADE_DURATION = 2000; // how long the fade is
+const INTERVAL_TIME = 6000; 
 
 export const Papers = () => {
   const ways = [
