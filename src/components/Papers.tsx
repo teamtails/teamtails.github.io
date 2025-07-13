@@ -19,7 +19,7 @@ export const Papers = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  return (
+return (
     <section className="py-20 bg-gray-50"
       style={{ backgroundImage: `url("/ground.png")` }} >
       <div className="container mx-auto px-6">
@@ -34,17 +34,28 @@ export const Papers = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => {
-            // State to manage expansion for each card
             const [isExpanded, setIsExpanded] = useState(false);
 
             const toggleExpansion = () => {
               setIsExpanded(!isExpanded);
             };
 
+            const displayText = isExpanded ? way.lDescription : way.sDescription;
+
+            // Function to render text with line breaks
+            const renderTextWithLineBreaks = (text) => {
+              return text.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < text.split('\n').length - 1 && <br />} {/* Add <br> for line breaks, but not after the last line */}
+                </React.Fragment>
+              ));
+            };
+
             return (
               <Card
                 key={index}
-                className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col ${isExpanded ? 'h-auto' : ''}`} // Adjust height dynamically
+                className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col ${isExpanded ? 'h-auto' : ''}`}
               >
                 <div className="relative w-full h-64 overflow-hidden rounded-t-md p-4">
                   <img src={way.image} alt={way.title} className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover" />
@@ -52,14 +63,14 @@ export const Papers = () => {
                 <CardContent className="text-center p-4 flex-grow flex flex-col">
                   <CardTitle className="text-xl text-gray-800 mb-2">{way.title}</CardTitle>
                   <CardDescription className="text-gray-600 mb-4 leading-relaxed">
-                    {/* Conditionally render sDescription or lDescription */}
-                    {isExpanded ? way.lDescription : way.sDescription}
+                    {/* Render the text using the helper function */}
+                    {renderTextWithLineBreaks(displayText)}
                   </CardDescription>
                   <Button
-                    className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300 mt-auto" // mt-auto pushes button to bottom
-                    onClick={toggleExpansion} // Toggle expansion on click
+                    className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300 mt-auto"
+                    onClick={toggleExpansion}
                   >
-                    {isExpanded ? "Read Less" : way.action} {/* Change button text */}
+                    {isExpanded ? "Read Less" : way.action}
                   </Button>
                 </CardContent>
               </Card>
