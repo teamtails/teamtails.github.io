@@ -61,7 +61,7 @@ const Chapters = () => {
 
   return (
     <div className="min-h-screen" style={{
-      backgroundImage: `url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+      backgroundImage: `url('/ground.png')`
     }}>
       <Navigation />
       {/* Header */}
