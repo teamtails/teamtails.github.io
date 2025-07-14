@@ -11,7 +11,7 @@ export const GetInvolved = () => {
       description: "Join our amazing team and help us care for animals in need. Every hour makes a difference.",
       action: "Join Us",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
-      link: "/events"
+      link: "https://teamtails.org/events"
     },
     {
       icon: HandHeart,
