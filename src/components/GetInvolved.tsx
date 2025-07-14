@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HandHeart } from "lucide-react";
@@ -11,7 +10,7 @@ export const GetInvolved = () => {
       description: "Join our amazing team and help us care for animals in need. Every hour makes a difference.",
       action: "Join Us",
       color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
-      link: "https://teamtails.org/events"
+      link: "/events"
     },
     {
       icon: HandHeart,
@@ -23,6 +22,7 @@ export const GetInvolved = () => {
     }
   ];
 
+  // This function is for scrolling to the contact section, not for navigation
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -40,7 +40,7 @@ export const GetInvolved = () => {
             Every volunteer contribution helps us reach more animals in need.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((way, index) => (
             <Card key={index} className={`${way.color} border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
@@ -54,14 +54,24 @@ export const GetInvolved = () => {
                 <CardDescription className="text-gray-600 mb-6 leading-relaxed">
                   {way.description}
                 </CardDescription>
-                <a href= {way.link} target="_blank" rel="noopener noreferrer">
-                  <Button 
-                    className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
-                    onClick={scrollToContact}
-                  >
-                    {way.action}
-                  </Button>
+                {/* Conditional rendering for the link and button */}
+                {way.link.startsWith('http') ? ( // If it's an external link
+                  <a href={way.link} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
+                    >
+                      {way.action}
+                    </Button>
                   </a>
+                ) : ( 
+                  <a href={way.link}> 
+                    <Button
+                      className="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all duration-300"
+                    >
+                      {way.action}
+                    </Button>
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}
