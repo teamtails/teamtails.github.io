@@ -6,16 +6,6 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react";
 export const UpcomingEvents = () => {
   const events = [
     {
-      title: "Social Media Project: Meeting 2",
-      date: "July 18th, 2025",
-      time: "5:00 - 6:00 PM",
-      location: "Zoom",
-      chapter: "All Chapters",
-      description: "Help create Instagram Reels and TikToks to spread our message!",
-      spots: "Volunteers needed",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=dialog"
-    },
-    {
       title: "Birdhouse Design Planning",
       date: "July 17th, 2025",
       time: "5:00 - 6:00 PM",
@@ -24,6 +14,16 @@ export const UpcomingEvents = () => {
       description: "Help plan our upcoming birdhouse making event!",
       spots: "Volunteers needed",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSfxgPfbQjE6uQcwcpoCmPLG4_4-IvNKFhuws-8TloarWRFxvg/viewform?usp=dialog"
+    },
+    {
+      title: "Social Media Project: Meeting 2",
+      date: "July 18th, 2025",
+      time: "5:00 - 6:00 PM",
+      location: "Zoom",
+      chapter: "All Chapters",
+      description: "Help create Instagram Reels and TikToks to spread our message!",
+      spots: "Volunteers needed",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=dialog"
     }
   ];
 
