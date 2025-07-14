@@ -7,7 +7,7 @@ export const UpcomingEvents = () => {
   const events = [
     {
       title: "Social Media Project: Meeting 2",
-      date: "July 17th, 2025",
+      date: "July 18th, 2025",
       time: "5:00 - 6:00 PM",
       location: "Zoom",
       chapter: "All Chapters",
@@ -17,7 +17,7 @@ export const UpcomingEvents = () => {
     },
     {
       title: "Birdhouse Design Planning",
-      date: "July 18th, 2025",
+      date: "July 17th, 2025",
       time: "5:00 - 6:00 PM",
       location: "Zoom",
       chapter: "All Chapters",
