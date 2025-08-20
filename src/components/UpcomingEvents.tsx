@@ -6,24 +6,14 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react";
 export const UpcomingEvents = () => {
   const events = [
       {
-      title: "Social Media Project: Meeting 2",
-      date: "July 23th, 2025",
-      time: "5:30 PM",
-      location: "Zoom",
+      title: "Takoma Park Folk Festival",
+      date: "Spetember 7th, 2025",
+      time: "10:30 to 6:30",
+      location: "Takoma Park MS",
       chapter: "All Chapters",
-      description: "Help create Instagram Reels and TikToks to spread our message!",
-      spots: "Volunteers needed",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=dialog"
-    },
-    {
-      title: "Birdhouse Design Planning",
-      date: "July 24th, 2025",
-      time: "6:00 PM",
-      location: "Zoom",
-      chapter: "All Chapters",
-      description: "Help plan our upcoming birdhouse making event!",
-      spots: "Volunteers needed",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSfxgPfbQjE6uQcwcpoCmPLG4_4-IvNKFhuws-8TloarWRFxvg/viewform?usp=dialog"
+      description: "Come support us at out booth!",
+      spots: "Anyone welcome",
+      link: ""
     }
   ];
 
