@@ -29,8 +29,7 @@ export const GetInvolved = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50"
-      style={{ backgroundImage: `url("/ground.png")` }} >
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
