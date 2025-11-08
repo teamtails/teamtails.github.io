@@ -5,13 +5,23 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react";
 
 export const UpcomingEvents = () => {
   const events = [
-      {
-      title: "Takoma Park Folk Festival",
-      date: "Spetember 7th, 2025",
-      time: "10:30 to 6:30",
-      location: "Takoma Park MS",
+    {
+      title: "Social Media Meeting #4",
+      date: "November 2th, 2025",
+      time: "5:30 to 6:30",
+      location: "Zoom",
       chapter: "All Chapters",
-      description: "Come support us at out booth!",
+      description: "Learn how to make useful technology for shelters!",
+      spots: "Anyone welcome",
+      link: ""
+    },
+    {
+      title: "Technology Meeting #2",
+      date: "November 6th, 2025",
+      time: "5:30 to 6:30",
+      location: "Zoom",
+      chapter: "All Chapters",
+      description: "Help out at our video making sessions!",
       spots: "Anyone welcome",
       link: ""
     }
