@@ -13,7 +13,7 @@ export const UpcomingEvents = () => {
       chapter: "All Chapters",
       description: "Learn how to make useful technology for shelters!",
       spots: "Anyone welcome",
-      link: ""
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=header"
     },
     {
       title: "Technology Meeting #2",
@@ -23,7 +23,7 @@ export const UpcomingEvents = () => {
       chapter: "All Chapters",
       description: "Help out at our video making sessions!",
       spots: "Anyone welcome",
-      link: ""
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSf2kwUDJGCqgGW9ha7aPOKUPr2w9yBqXiH4ePEWLGdhB1aYOA/viewform?usp=header"
     }
   ];
 
