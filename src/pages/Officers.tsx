@@ -10,7 +10,7 @@ const Officers = () => {
       name: "Beckett Bonness",
       title: "President",
       bio: "As President, he brings experience from business leadership through DECA, the World Trade Center Institute, and economics advocacy.",
-      image: "/econme-copy.jpg"
+      image: "/b1.jpeg"
     },
     {
       name: "Molly O'Brien",
